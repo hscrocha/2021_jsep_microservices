@@ -1,0 +1,107 @@
+\documentclass[AMA,LATO1COL]{WileyNJD-v2}
+
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{url}
+\usepackage{xspace}
+\usepackage{todonotes}[disable]
+\newcommand{\comment}[1]{\todo[color=yellow!40, inline]{\footnotesize{#1}}}
+\newcommand{\henrique}[1]{\todo[color=blue!40, inline]{\footnotesize{Henrique: #1 }}}
+\newcommand{\keerthana}[1]{\todo[color=pink!40, inline]{\footnotesize{Keerthana: #1 }}}
+\newcommand{\serge}[1]{\todo[color=orange!40, inline]{\footnotesize{Serge: #1}}}
+\newcommand{\review}[1]{\todo[color=green!40, inline]{\footnotesize{Reviewer: #1}}}
+
+\newcommand{\challengecount}[0]{\textsc{18}\xspace}
+\newcommand{\techcount}[0]{\textsc{44}\xspace}
+\newcommand{\techgroupcount}[0]{\textsc{6}\xspace}
+
+
+\articletype{Special Issue Paper - Perspective}%
+
+\received{31 July 2021}
+\revised{day month year}
+\accepted{day month year}
+
+\raggedbottom
+
+\begin{document}
+
+\title{Systematic Literature Review on Microservices: \\ Challenges and Technologies}
+
+\author[1]{Keerthana Sanala Prakash}
+
+\author[2]{Henrique Rocha}
+
+\author[3]{Marco Túlio Valente}
+
+\author[1]{Serge Demeyer}
+
+\authormark{Prakash \textsc{et al}}
+
+
+\address[1]{\orgdiv{Department of Computer Science}, \orgname{University of Antwerp}, \orgaddress{\country{Belgium}}}
+
+\address[2]{\orgdiv{Department of Computer Science}, \orgname{Loyola University Maryland}, \orgaddress{\country{USA}}}
+
+\address[3]{\orgdiv{Deparment of Computer Science}, \orgname{UFMG}, \orgaddress{\country{Brazil}}}
+
+\corres{Henrique Rocha. \email{henrique.rocha@gmail.com}}
+
+%\presentaddress{This is sample for present address text this is sample for present address text}
+
+\abstract[Summary]{As microservice architecture is a new research area, the need for a systematic literature review is important to summarise the state of the art and identify the potential for future studies. Although various studies have been conducted which cover the microservice challenges, it is still strenuous to get a clear image of all the existing challenges one needs to understand while adopting microservices. In this paper, we conducted a systematic literature review to understand the challenges in adopting microservices and the technologies used in implementing microservices.
+In our systematic literature review, we collected 81 primary studies. We identified that the most common challenges in adopting microservices are migration (14 references), performance (11 references), scalability (10 references), and testing (10 references). For the technologies used in implementing microservices, container technologies (i.e., docker, kubernetes) are the most cited (14 references). Moreover, the second most cited are the programming languages and Other technologies used to develop microservices (13 references). The resulting study can serve as a foundation for researchers and practitioners to plan and implement microservices.
+}
+
+\keywords{microservices, systematic literature review, service oriented architecture, internet of things.}
+
+\jnlcitation{\cname{
+\author{Prakash K}, 
+\author{Rocha H}, 
+\author{Valente M.T}, and 
+\author{Demeyer S}} (\cyear{2021}), 
+\ctitle{Systematic Literature Review on Microservices: Challenges and Technologies}, \cjournal{J Softw Evol Proc}, \cvol{2021;00:X--Y}.}
+
+\maketitle
+
+%\footnotetext{\textbf{Abbreviations:} ANA, anti-nuclear antibodies; APC, antigen-presenting cells; IRF, interferon regulatory factor}
+
+
+\input{sections/sec_intro}
+
+%\input{sections/sec_background}
+
+%\input{sections/sec_studydesign}
+
+%\input{sections/sec_results}
+
+%\input{sections/sec_discussion}
+
+%\input{sections/sec_threats}
+
+%\input{sections/sec_relatedwork}
+
+\input{sections/sec_conclusion}
+
+%\nocite{*}% Show all bib entries - both cited and uncited; comment this line to view only cited bib entries;
+\bibliography{wileyNJD-AMA} %BST file for AMA reference style
+%\bibliography{wileyNJD-APA} %BST file for APA reference style
+%\bibliography{wileyNJD-AMS} %BST file for AMS reference style
+%\bibliography{wileyNJD-VANCOUVER} %BST file for Vancouver reference style
+
+
+%\bibliography{final_paper_bibliography}
+
+
+%\section*{Author Biography}
+
+%\begin{biography}{\includegraphics[width=66pt,height=86pt,draft]{empty}}{\textbf{Author Name.} This is sample author biography text this is sample author biography text this is sample author biography text this is sample author biography text this is sample author biography text this is sample author biography text this is sample author biography text this is sample author biography text this is sample author biography text this is sample author biography text this is sample author biography text this is sample author biography text this is sample author biography text this is sample author biography text this is sample author biography text this is sample author biography text this is sample author biography text this is sample author biography text this is sample author biography text this is sample author biography text this is sample author biography text.}
+%\end{biography}
+
+\end{document}
