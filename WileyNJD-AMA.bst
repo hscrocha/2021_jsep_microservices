@@ -1,7 +1,36 @@
 %
-% THIS IS AN AMA BST FILE
+% THIS IS AN ALPHA VERSION!!!
 %
-
+% USE AT YOUR OWN RISK
+%
+% This should work for articles...I don't know if it works well for
+% books, etc (give it a try and see!).
+%
+% PLEASE COMPARE RESULTS WITH THE INSTRUCTIONS FOR AUTHORS FOR THE
+% JOURNAL YOU ARE SUBMITTING FOR...I CANNOT ACCEPT RESPONSIBILITY
+% FOR REJECTED MANUSCRIPTS (but I will try to fix it if you point out
+% a bug)
+%
+% AMA Manual of Style (JAMA, Cancer, many others..)
+%    -Up to 6 authors, otherwise 3 authors et al.
+%    -Title in italics
+%    -numeric labels
+%    -order-of-reference.
+%
+%    Author L, Author S, Author D, et al. Title. Journal.
+%    YYYY;VOL(NUM):PPP-PPP.
+%
+%
+%   History
+%    9/30/85    (HWT)   IEETR Original version, by Howard Trickey.
+%    1/29/88    (OP&HWT) Updated for BibTeX version 0.99a, Oren Patashnik;
+%    3/27/02    IEETR style used as framework.  Formats heavily changed by
+%               Eric Kort (eric.kort@vai.org)
+%    1/02/18    Update to fit the 10th edition of AMA citation style
+%               Thomas DESCHLER (thomas@deschler.fr)
+%
+%           THIS VERSION DOES NOT WORK WITH BIBTEX 0.98i.
+%
 
 ENTRY
   { address
