@@ -1,11 +1,11 @@
-% !TEX root = ../final_paper.tex
+% !TEX root = ../2021_microservices_wileytemplate.tex
 
 \section{Study Design}\label{sec:study-design}
 
 We conducted a systematic literature review (SLR) conforming to the guidelines presented by Kitchenham and Charters~\cite{Kitchenham2007}. A systematic literature review (SLR) is a method of reviewing data and results from research about a particular question in a standardized systematic way~\cite{Sebastian2018}. According to Garousi et al.~\cite{Garousi2016}, it is important to complement scientific papers in an systematic literature review by also analyzing grey literature. Therefore, we decided to adapt our systematic literature review protocol to include grey references.
 
 
-In this section, we describe the designed protocol for our systematic literature review which was enhanced with grey literature. We divided our protocol for the systematic literature review into the following steps: (A) Preparation, (B) Research questions, (C) Search procedure, (D) Selection criteria, (E) Grey literature, (F) Data extraction, and (G) Data synthesis.
+In this section, we describe the designed protocol for our systematic literature review which was enhanced with grey literature. We divided our protocol for the systematic literature review into the following steps: (1) Preparation, (2) Research questions, (3) Search procedure, (4) Selection criteria, (5) Grey literature, (6) Data extraction, and (7) Data synthesis.
 
 \subsection{Preparation}
 
@@ -45,7 +45,7 @@ Figure~\ref{fig:total-papers-per-year} shows the search results divided per year
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=\linewidth]{images/yearvsarticles.png}
+	\includegraphics[width=0.5\linewidth]{images/yearvsarticles.png}
 	\caption{Search results per year before applying the selection criteria.}
 	\label{fig:total-papers-per-year}
 \end{figure}	 
@@ -54,37 +54,29 @@ Figure~\ref{fig:total-papers-per-year} shows the search results divided per year
 \subsection{Selection Criteria}
 
 Selection criteria determine which studies to include or exclude from a systematic literature review. 
-Since the search provided a good amount of results, we focused on defining rejection criteria to exclude irrelevant results. Table~\ref{tab:selection-criteria} summarizes our selection criteria which we detail as follows:
+Since the search provided a good amount of results, we focused on defining rejection criteria to exclude irrelevant results.
+Our selection criteria are detailed as follows:
+%Table~\ref{tab:selection-criteria} summarizes our selection criteria which we detail as follows:
 
-
-\begin{table}[h]
-\centering
-\caption{Selection Criteria}
-\label{tab:selection-criteria}
-\begin{tabular}{|l|p{5cm}|}
-%\hline   
+%\begin{table}[h]
+%\centering
+%\caption{Selection Criteria}
+%\label{tab:selection-criteria}
+%\begin{tabular}{|l|p{5cm}|}
+%\hline
 %	& \\
-%	& i1: Papers which are published from 2017  \\
-%	& i2: Papers that are written in English \\
-%Inclusion Criteria 	& i3: Peer reviewed papers \\
-%	& i4: Study on microservices challenges and adoption \\
-%	& i5: Papers which have technology solutions to solve challenges \\
-%	& \\
-	
-\hline
-	& \\
-	& R1: Duplicate papers \\
-   	& R2: Not written in English \\
-   	& R3: Not peer-reviewed \\
-Exclusion Criteria    
-	& R4: Published before 2017 \\
-   	& R5: Select Extended versions \\
-   	& R6: Unrelated based on title \\
-   	& R7: Unrelated based on abstract  \\
-   	& \\
-\hline
-\end{tabular}
-\end{table}
+%	& R1: Duplicate papers \\
+%  	& R2: Not written in English \\
+%   	& R3: Not peer-reviewed \\
+%Exclusion Criteria    
+%	& R4: Published before 2017 \\
+%   	& R5: Select Extended versions \\
+%   	& R6: Unrelated based on title \\
+%   	& R7: Unrelated based on abstract  \\
+%   	& \\
+%\hline
+%\end{tabular}
+%\end{table}
 
 
 \begin{itemize}
@@ -100,7 +92,7 @@ We exclude papers published before 2017. We wanted this study to focus on the mo
 
 
 We apply the selection criteria in the same order as shown, i.e., we apply R1 first then followed by R2, and so forth.
-From the described selection criteria, only the last two (R6 and R7) are subjective. To mitigate the subjectiveness of such criteria, we had two persons (the main author and the supervisor) working separately to review them. In case of disagreement, the paper would be included in study. Therefore, we only rejected papers if both persons marked it as unrelated.
+From the described selection criteria, only the last two (R6 and R7) are subjective. To mitigate the subjectiveness of such criteria, we had two persons (the first and second authors) working separately to review them. In case of disagreement, the paper would be included in study. Therefore, we only rejected papers if both persons marked it as unrelated.
 
 As we previously described, the search returned a total of 471 results. After applying our selection criteria, we obtained 60 studies (i.e., 311 papers were rejected). Figure~\ref{fig:selection-criteria} shows the number of papers rejected by each criterion, and 'A' marks the total of accepted papers after the rejection criteria were applied.
 
@@ -108,7 +100,7 @@ As we previously described, the search returned a total of 471 results. After ap
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=\linewidth]{images/exclusion.png}
+	\includegraphics[width=0.5\linewidth]{images/exclusion.png}
 	\caption{Selection criteria showing the number of scientific references rejected by each exclusion criterion (R1 to R7) and the number of accepted (A) references.}
 	\label{fig:selection-criteria} %%Do not put spaces in the label name, and try to use a name easier to relate to the figure
 \end{figure}	
@@ -126,16 +118,16 @@ Guidelines for grey literature review~\cite{Garousi2019} state it is important t
 
 We decided to set our stop criteria when our grey reference numbers achieved more than one-third of the scientific references we selected in the previous phase, i.e., 21 references\footnote{We collected 60 scientific references in the previous step. Therefore, one-third of 60 would be 20 references. Since we defined our criterion to be more than one-third (instead of exactly one-third), we needed at least one more reference.} in total. Therefore, we collected 21 references from grey sources.
 
-The 21 grey literature references were added to our 60 scientific references, for a total of 81 references (Figure~\ref{fig:stats-total}). In the next steps of the protocol, we use the total references from both Scientific and grey literature.
+The 21 grey literature references were added to our 60 scientific references, for a total of 81 references. %(Figure~\ref{fig:stats-total}). 
+In the next steps of the protocol, we use the total references from both scientific and grey literature.
 
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=\linewidth]{images/stats_total}	
-	\caption{Total number of collected references used in our systematic literature review (SLR).}
-	\label{fig:stats-total}
-\end{figure}		
+%\begin{figure}[h]
+%	\centering
+%	\includegraphics[width=0.5\linewidth]{images/stats_total}	
+%	\caption{Total number of collected references used in our systematic literature review (SLR).}
+%	\label{fig:stats-total}
+%\end{figure}		
 
-%For these 21 publications, we apply similar procedures for Data Extraction and Synthesis as used for systematic literature review. We amended the spreadsheets with the information obtained from the grey literature. 
 
 
 \subsection{Data Extraction}

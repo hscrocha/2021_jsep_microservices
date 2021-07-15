@@ -1,4 +1,4 @@
-% !TEX root = ../final_paper.tex
+% !TEX root = ../2021_microservices_wileytemplate.tex
 
 \section{Results}\label{sec:results}
 
@@ -6,35 +6,29 @@ In this section, we present the results from our systematic literature review. F
 
 \subsection{General Analysis}\label{sec:results-general}
 
-%The results obtained from the systematic literature review are plotted in different graphs and they are given below in a way to answer the research questions.
-
-%From the analysis using the Systematic literature approach, we can see from Figure~\ref{fig:total-papers-per-year}, 'Publication year vs articles' that the articles are been published increasing high from the year 2017. This gives us the significance of the study related to microservices and technologies that are growing day by day in developing microservices. This makes us easier to understand that during the years after the introduction of microservices after 2017 a two years later, we can gather good enough challenges from then till date. This is addressed in the R4 of the exclusion criteria. One should be aware of the challenges which are faced in adopting microservices as this is also our motivation to provide an overview of the challenges faced and to overcome them while developing microservices. 
-
 Figure~\ref{fig:collected-papers-slr} shows an overview of the collected literature references we used in our systematic literature review. In our study, we have a total of 81 references, of which 60 are from scientific sources and 21 come from grey literature. 
-%To provide an overview of the number and type of publications analyzed we provided the literature statistics in Figure~\ref{fig:selected-papers-grey-1}, \ref{fig:selected-papers-grey-2} and Figure~\ref{fig:selected-papers-slr-1}, \ref{fig:selected-papers-slr-2}. 
-
 
 \begin{figure*}[h]
     \centering
-    \begin{subfigure}[b]{0.45\textwidth}
+    \begin{subfigure}[b]{0.40\textwidth}
         \includegraphics[width=\textwidth]{images/publicationtypes_1.png}
         \caption{Scientific references per year}
         \label{fig:papers-academic-year}
     \end{subfigure}
 ~
-    \begin{subfigure}[b]{0.30\textwidth}
+    \begin{subfigure}[b]{0.25\textwidth}
         \includegraphics[height=0.2\textheight]{images/publicationtypes_3.png}
         \caption{Types of the scientific references}
         \label{fig:papers-academic-type}
     \end{subfigure}
 
-    \begin{subfigure}[b]{0.45\textwidth}
+    \begin{subfigure}[b]{0.40\textwidth}
         \includegraphics[width=\textwidth]{images/greytype_1.png}
         \caption{Grey references per year}
         \label{fig:papers-grey-year}
     \end{subfigure}
 ~
-    \begin{subfigure}[b]{0.32\textwidth}
+    \begin{subfigure}[b]{0.25\textwidth}
         \includegraphics[height=0.2\textheight]{images/greytype_2.png}
         \caption{Types of the grey references}
         \label{fig:papers-grey-type}
@@ -61,7 +55,7 @@ From the selected references, we could see there is a good variety of publicatio
 
 \begin{figure*}[t]
 	\centering
-	\includegraphics[width=\linewidth]{images/Challenges_updated.png}
+	\includegraphics[width=0.9\linewidth]{images/Challenges_updated.png}
 	\caption{Challenges in adopting microservices }
 	\label{fig:challenges}
 \end{figure*}	
@@ -234,15 +228,14 @@ In a power-constrained data center, blindly budgeting power usage could lead to 
 
 \subsubsection{Load balancing}%#18
 
-%Organizations are increasingly shifting to a microservices architecture to support faster time to market. However, load balancing challenges often result as we resource population changes, and as we infrastructure grows to meet demand. If the load is not shared evenly across nodes, application performance suffers and end-user experience can be impacted. Determining how we load is balanced across all the nodes for each service in we environment and dealing with dynamic changes. One of the challenges remains how to quickly roll out, troubleshoot, and manage these microservices. Manually allocating resources for applications and reconfiguring the load balancer to incorporate new services is inefficient and error-prone. It becomes downright problematic at scale~\cite{Ville2019, Branko2018}.
-
 There are two types of load balancing which are server-side and client-side load balancing. In server-side load balancing, the instances of the service are deployed on multiple servers and then a load balancer is put in front of them. All the incoming requests traffic firstly comes to this load balancer acting as a middle component. It then decides to which server a particular request must be directed to based on some algorithm. The challenge with this load balancer is that it acts as a single point of failure and the complexity of the system increases \cite{Ville2019}. The server-side load balancer's logic is a part of the client itself, it holds the list of servers and decides to which server a particular request must be directed based on some algorithm. The drawback here is that the load balancer's logic is mixed up with the microservice code \cite{Branko2018}.
+
 
 \subsection{RQ\#2: What are the main technologies or solutions used for implementing microservices?}\label{sec:results-rq2}
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=\linewidth]{images/commtechother.png}
+	\includegraphics[width=0.5\linewidth]{images/commtechother.png}
 	\caption{Technologies per group used for Implementing Microservices}
 	\label{fig:tech-group}
 \end{figure}	
