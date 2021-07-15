@@ -2,10 +2,6 @@
 
 \section{Discussion}\label{sec:discussion}
 
-%In summary, applications built using microservices have the benefits of a strong module boundary, independent scalability, and technology diversity. Though this architecture imposes challenges, microservice adoption can be a highly beneficial experience for organizations, provided the right tools and solutions are used to address the operational and security complexities. 
-
-%In this section, we discuss the links between the results we presented from our two Research Questions (Sections~\ref{sec:results-rq1} and~\ref{sec:results-rq2}). Therefore, we show the challenges we encountered and discuss the technologies or solutions used to address each challenge.
-
 In this section, we describe the possible solutions for challenges that we encountered during our systematic literature review. Whenever possible we also link the technologies we presented to the appropriate challenge. Therefore, we discuss the links between the results we presented from our two research questions (Sections~\ref{sec:results-rq1} and~\ref{sec:results-rq2}), focusing on how to address the challenges, i.e., we show the challenges we encountered and discuss the solutions and technologies used to address each challenge.
 
 \subsection{Migration}%#1
@@ -138,98 +134,6 @@ Integration platform services (iPaaS) was recommended for situations when the in
 Second, the transformation environment should consist of independent microservices. This enables the incremental transformation of the model through the pattern incrementality by traceability~\cite{liu2018, overeem2018}.
 
 \par Continuous integration and continuous delivery both go hand in hand with microservices. Without these two practices, it becomes very hard to handle multiple services, their deployments, and validating the actions of the service~\cite{Zhang2019, Kalske2017}. 
-
-
-\subsection{Communication}%#11
-
-Two types of communication are taken into consideration. One is the communication between teams and the other is communication between services.
-
-\par Often, enhancement or corrective maintenance issues (e.g. interface model changes, design decision changes) must be communicated between multiple teams. 'Multi-project coding issues' as a solution approach for communicating issues concerning multiple projects/services and teams in a qualitative way. A multi-project coding issue is a coding issue that can concern more than one project at the same time. They can link other coding issues that could concern other projects/services~\cite{Speth2019}.
-
-\par Unlike the internals of a monolith, microservices communicate over a network. In some circumstances, this can be seen as a security concern. Istio solves this problem by automatically encrypting the traffic between microservices~\cite{Zhang2019}.
-Modules could be communicated using coap which has minimal overhead\cite{liu2018}. Apache kafka is one of the right solutions for communication between microservices and it is been used at ebay~\cite{Gonchar2017}.
-
-
-
-\subsection{Logging}%#12
-
-One of the main criteria for a mature microservice-based development process is the robustness of the logging. It is better to be set up as early as the project starts~\cite{wang2020}.
-Detecting failures quickly for automatically restoring services is critical and is typically achieved using logging and monitoring tools, such as grafana, kibana, logstash, and elastic stack~\cite{KalskeM2017}.
- 
-\par Grafana has released loki, a solution meant to complement the main tool to better parse, visualize and analyze logging~\cite{Kalske2017, Zhang2019}. It is hard to identify issues between microservices when services are dependent on each other and they have a cyclic dependency. Correlation id can be passed by the client in the header to REST APIs to track all the relevant logs across all the pods/docker containers on all clusters. Zap app is been used at uber for logging~\cite{Matt2016}.
-
-
-\subsection{Technical challenges}%#13
-
-\par Microservice architecture can be very useful but it also comes with technical challenges that have to be solved to get complete benefit from them. These challenges could be handling of distributed transactions, communication between microservices, separation of concerns in microservices etc.~\cite{Kalske2017,KalskeM2017}. We provide some ideas on how to overcome technical challenges below as follows.
-
-\begin{itemize}
-\item For data consistency and distributed transactions- a saga patterns \footnote{Long lived transactions (LLTs) hold on to database resources for relatively long periods of
-time, significantly delaying the termination of shorter and more common transactions to alleviate these problems the notion called saga is proposed. A LLT is a saga if it can be written as a sequence of transactions that can be interleaved with other transactions. The database management system guarantees that either all the transactions m a saga are successfully completed or compensating transactions are run to amend a partial execution} could be implemented and avoid a two-phase commit ~\cite{neves2019}.
-\item Testing complexity - integration tests and following domain driven design concepts.
-\item Setup and execution of the initial prototype - When the microservices architecture is being developed from scratch the team should try to use the monolith-first approach and then migrate.
-\item Creating uniformity across multiple services - static code analysis tools can be used.
-\item Distributed monitoring - the concept of Log aggregation should be used.
-\item Decomposition of the pre-existing system with the proper granularity and low coupling - most successful microservices migrations identified used Domain Driven Design to deal with this issue.
-\item Database challenges - usage of circuit breaker. 
-\item Communicational challenges - REST API.
-\item Testing challenges - unit testing, integration testing and end-to-end testing.
-\item Observability challenges - zookeeper, eureka server, docker.
-\item Organizational challenges - experimenting should not be restricted~\cite{Kalske2017, KalskeM2017}.
-
-For some of the application system it is good to mainly focus on technology choice. Strong knowledge of devops and cloud architecture patterns is requirement~\cite{Falatiuk2019}.
-\end{itemize}
-
-
-\par An orchestration plan describes components, their dependencies, and their lifecycle in a layered plan. A paas then enacts the workflows from the plan through agents. Paas can support the deployment of applications from containers~\cite{Sharaf2019}. In paas, there is a need to define, deploy and operate cross-platform capable cloud services using light-weight virtualization, for which containers are a solution. There is also a need to transfer cloud deployments between cloud providers, which requires lightweight virtualized clusters for container orchestration. Some paas are lightweight virtualization solutions in this sense. 
-
-Specific or generic solutions for paas platforms include 
-\begin{itemize}
-\item Linux: Docker, lxc linux containers, openvz, and others for variants such as bsd, hp-ux, and solaris. 
-\item Windows: sandboxie 
-\item Cloud paas: Warden/Garden (in cloud foundry), lxc (in openshift). 
-\end{itemize}
-
-Kubernetes is a more comprehensive solution that would tackle orchestration of complex application stacks that could involve docker orchestration based on the topology-based service orchestration standard tosca, which is for instance supported by cloudify paas \cite{Bahadori2018, Falatiuk2019, Venugopal2017 ,leo2019, Kalske2017, Zaytev2018, Kristiani2020, khan2020}. 
-
-
-\subsection{Technical Debt}%#14
-The technical debts can cover a lot of areas but we address only the technical debt in code quality, architectural debt. There are two solutions, the first one is clean up, and the second is prevention.
- 
-\par For cleaning up, we can perform parallel rewrite, partial rewrite, and phaseout; for prevention: code reviews, acceptance criteria, workflow, and tests~\cite{Tuuli2020}. domain-driven design is one of the solutions to reduce technical debt. 
-It enables us to organize a testable layer of code that is similar to our problem domain and is responsible for all the business logic of our app~\cite{Zrzavy2020}. If the microservices configuration is done badly then the common way to fix this is to use configuration servers like Spring cloud config which handles the configuration by itself. Service discovery tools like eureka and consul could help too. When the debt is due to libraries used by some developers then the solution is to use multiple different libraries that have well-defined boundaries~\cite{Uber}. 
-
-
-\subsection{Documentation}%#15
-Documentation of microservices can be time-consuming and challenging that is why we need to follow some of the solutions like comprehensive documentation which should include description, architecture diagram, endpoint, dependencies, run books, contact information, onboarding guide, etc. The other solution is to update documentation as a part of the development cycle. Using a central location for all microservice documentation~\cite{selmadji2020}.
-
-\par There are couple of challenges such as content, assignment, tooling, and business-related when documenting the microservice-based information techology landscape from an enterprise architecture (EA) model maintenance perspective. To document the EA model, Kleehaus~\cite{kleehaus2019} suggests a solution of automatically documenting the runtime data from the monitoring tool. However, the tool used for automated documentation is not yet described in his publication and he mentions to publish it in the future works.
-
-
-
-\subsection{IoT Challenges}%#16
-Containers are particularly useful to enable portability and heterogeneity for high-degree automation in testing, deployment, and operations. Apache kafka and spark for application resiliency.
-The Akka, and Play framework are useful in building individual services, and leveraging both http and kafka for inter-service communication~\cite{khan2017}.
-
-\par The combination of edge and cloud computing is going to make the internet of things (IoT) rapid, light, and more reliable. IoT and cloud-edge computing are distinct disciples that have evolved separately over time. However, they are increasingly becoming interdependent, and are what the future holds. A crucial aspect is how to design a compound of cloud and edge computing architectures, and implement IoT effectively.
-An implementation of container-based virtualization which constructs kubernetes minion (nodes) in the socker container service independently for each service on the edge side can address IoT challenges. Moreover, docker and kubernetes when combined together provide the best solutions by effectively organizing containerized applications~\cite{Kristiani2020}.
-
-
-
-\subsection{Power management}%#17
-There are couple of way to manage the power consumption which are described in the auto, native and transparent power management framework (ANT-man) solution. 
-First, an auto power budgeting scheme for reducing the power coordination latency at the datacenter level. It can proactively determine the power budget tailored to each microservice. Second, ANT-Man proposes a native and transparent power control scheme to overcome the power configuration latency for each microservice. It enables super-fast power budget enforcement with nanosecond-scale performance scaling~\cite{Hou2020}.
-
-\par To unleash the performance potential of the cloud in the microservice era, we model it using a bipartite graph and a metric called microservice criticality factor (MCF) to measure the overall impact of performance scaling on a microservice from the whole application's perspective proposed. A novel system framework called servicefridge that leverages MCF to jointly orchestrate software containers and control hardware power demand is also proposed. servicefridge allows the data center to reduce its dynamic power by 25\% with slight performance loss. It improves the mean response time by 25.2\% and improves the 90th tail latency by 18\% compared with existing schemes~\cite{Hou2019}.
-
-
-\subsection{Load balancing}%#18
-Load balancers are used to distribute incoming traffic to the network by efficiently distributing across multiple servers. By doing this reliability and high availability are maintained. It makes it easier to use in adding and removing servers in the network as per demand. 
-
-\par The API gateway can also handle authorization and load balancing for the microservices. The benefits of using an API gateway was reported to be extensibility and backward compatibility because of the additional level of freedom the customized API can provide. The reported downsides~\cite{Taibi2019} were scalability issues and increased complexity in the architecture. Because graphql enables clients to define their customized queries, a single graphql endpoint can be used by multiple clients, thus graphql suits well to be used in the API gateway pattern~\cite{Ville2019}.
-
-\par To resolve challenges like load balancing, user acceptance, routing, and microservice auto-discovery. A redundant program code that covers the same functionality needs to be written at different layers of the software architecture. This often leads to mistakes, as a developer introduces unintentional errors to the repetitive code constructs. Moreover, the configuration of microservice architecture is not a trivial task and it requires intricate and redundant work to be performed. Therefore, to mitigate and speed up such a process, it could be beneficial for a developer to have a language with a concise set of concepts that are specific to the domain of REST microservice architecture development. Such a language should allow developers to have a single specification of a microservice without writing any boilerplate or redundant code.
-microbuilder tool frameworks provide a set of tools such as (i) zuul, for user request routing and filtering (ii) eureka, for microservice auto-discovery and registry, (iii) ribbon, for resilient and intelligent inter-process communication and load balancing, and (iv) hystrix, for isolated latency and fault tolerance among microservices. These tools are utilized to resolve some of the challenges caused by a large number of microservices per application. The remaining challenges concerning redundant coding and not so trivial configuration of microservice architectures, using these tools can be resolved by using microBuilder too~\cite{Branko2018}.
 
 
 
