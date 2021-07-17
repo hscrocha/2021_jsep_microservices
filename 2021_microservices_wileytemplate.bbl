@@ -11,6 +11,39 @@ Pahl. C, Jamshidi. P. Microservices: A Systematic Mapping Study. In: INSTICC.
 \newblock \href {\doibase 10.1109/MS.2018.2141030} {doi:
   10.1109/MS.2018.2141030}
 
+\bibitem{thones2015}
+Th{\"o}nes J. Microservices. {\it IEEE software} 2015\string; 32(1)\string:
+  116--116.
+
+\bibitem{Taibi2019}
+Taibi D, Systa K. From Monolithic Systems to Microservices: A Decomposition
+  Framework based on Process Mining. In: 9th International Conference on Cloud
+  Computing and Services Science (CLOSER). ; 2019; Heraklion (Greece)\string:
+  153--164.
+
+\bibitem{Danbettinger2019}
+Danbettinger . What are Microservices. 2019.
+\newblock \url{youtu.be/CdBtNQZH8a4}.
+
+\bibitem{Pavlovic2020}
+Uros~Pavlovic GA. Docker: Top 7 Benefits of Containerization. In: ; 2020.
+\newblock \url{https://hentsu.com/docker-containers-top-7-benefits/}.
+
+\bibitem{Lenga2019}
+Lenga S. {\it Modernization of Monolithic Legacy Applications towards a
+  Microservice Architecture with ExplorViz}. PhD thesis. Kiel University,
+  2019.
+
+\bibitem{Jag2017}
+Ramaswamy J. Cloud Migration with a Microservice Architecture: A Coca Cola Case
+  Study. 2017.
+\newblock
+  \url{https://www.brighttalk.com/webcast/8481/255521/cloud-migration-with-a-microservice-architecture-a-coca-cola-case-study}.
+
+\bibitem{Rodrigue2016}
+Schaefer R. From Monolith to Microservices at Zalando. 2016.
+\newblock \url{youtu.be/gEeHZwjwehs}.
+
 \bibitem{Soldani2018}
 Soldani J, Tamburri D, Heuvel WJ. The Pains and Gains of Microservices: A
   Systematic Grey Literature Review. {\it Journal of Systems and Software}
@@ -64,80 +97,19 @@ Dhanasekaran K. Migrating Applications from Monolithic to Microservice on AWS.
 Kitchenham B, Charters S. Guidelines for performing systematic literature
   reviews in software engineering.  2007.
 
-\bibitem{thones2015}
-Th{\"o}nes J. Microservices. {\it IEEE software} 2015\string; 32(1)\string:
-  116--116.
-
-\bibitem{Taibi2019}
-Taibi D, Syst{\"a} K. From Monolithic Systems to Microservices: A Decomposition
-  Framework based on Process Mining.. In: ; 2019\string: 153--164.
-
-\bibitem{Danbettinger2019}
-Danbettinger . What are Microservices. 2019.
-\newblock \url{youtu.be/CdBtNQZH8a4}.
-
-\bibitem{Pavlovic2020}
-Uros~Pavlovic GA. Docker: Top 7 Benefits of Containerization. In: ; 2020.
-\newblock \url{https://hentsu.com/docker-containers-top-7-benefits/}.
-
-\bibitem{Zaytev2018}
-Zaytsev A. Continuous integration for kubernetes based platform solution.
-  2018.
-
-\bibitem{Jaleel2017}
-Kavungal J. Benefits and Challenges of Adopting Microservices Architecture. In:
-  ; 2017.
-\newblock
-  \url{https://dzone.com/articles/benefits-and-challenges-of-adopting-microservices}.
+\bibitem{Ghani2019}
+Ghani I, Wan-Kadir WM, Mustafa A, Babir M. Microservice Testing Approaches: A
+  Systematic Literature Review. {\it International Journal of Integrated
+  Engineering} 2019\string; 11\string: 65-80.
 
 \bibitem{Francesco2019}
 Di~Francesco P, Lago P, Malavolta I. Architecting with microservices: A
   systematic mapping study. {\it Journal of Systems and Software} 2019\string;
   150\string: 77--97.
 
-\bibitem{Kalske2017}
-Kalske M. Transforming monolithic architecture towards microservice
-  architecture. In: ; 2018.
-
-\bibitem{Santos2020}
-Santos N, Silva AR. A Complexity Metric for Microservices Architecture
-  Migration. In: IEEE. ; 2020\string: 169--178.
-
-\bibitem{Lenga2019}
-Lenga S. {\it Modernization of Monolithic Legacy Applications towards a
-  Microservice Architecture with ExplorViz}. PhD thesis. Kiel University,
-  2019.
-
-\bibitem{Jag2017}
-Ramaswamy J. Cloud Migration with a Microservice Architecture: A Coca Cola Case
-  Study. 2017.
-\newblock
-  \url{https://www.brighttalk.com/webcast/8481/255521/cloud-migration-with-a-microservice-architecture-a-coca-cola-case-study}.
-
-\bibitem{Rodrigue2016}
-Schaefer R. From Monolith to Microservices at Zalando. 2016.
-\newblock \url{youtu.be/gEeHZwjwehs}.
-
-\bibitem{haugeland2020}
-Haugeland SG. Migrating a Monolithic Architecture to a Customization-Ready
-  Multi-tenant Microservice Architecture. Master's thesis. University Of OSLO.
-  2020.
-
-\bibitem{villamizar2017}
-Villamizar M, Garc{\'e}s O, Ochoa L, et al. Cost comparison of running web
-  applications in the cloud using monolithic, microservice, and AWS Lambda
-  architectures. {\it Service Oriented Computing and Applications} 2017\string;
-  11(2)\string: 233--247.
-
-\bibitem{Sharaf2019}
-Eldein AIES. {\it A Container-based Architecture for the Design of Portable
-  Cloud Applications}. PhD thesis. Sudan University of Science and Technology,
-  2019.
-
-\bibitem{Venugopal2017}
-Venugopal M. Containerized Microservices architecture. {\it International
-  Journal of Engineering and Computer Science} 2017\string; 6(11)\string:
-  23199–23208.
+\bibitem{ghofrani2018}
+Ghofrani J, L{\"u}bke D. Challenges of Microservices Architecture: A Survey on
+  the State of the Practice.. In: ; 2018\string: 1--8.
 
 \bibitem{Sebastian2018}
 G\"{o}tz S. Supporting Systematic Literature Reviews in Computer Science: The
@@ -149,11 +121,6 @@ Garousi V, Felderer M, M\"{a}ntyl\"{a} MV. The Need for Multivocal Literature
   Reviews in Software Engineering: Complementing Systematic Literature Reviews
   with Grey Literature. In: EASE '16. Association for Computing Machinery;
   2016; New York, NY, USA
-
-\bibitem{Ghani2019}
-Ghani I, Wan-Kadir WM, Mustafa A, Babir M. Microservice Testing Approaches: A
-  Systematic Literature Review. {\it International Journal of Integrated
-  Engineering} 2019\string; 11\string: 65-80.
 
 \bibitem{Shady2020}
 Attia S. Systematic Literature Review. 2020.
@@ -257,6 +224,11 @@ Wang Z, Xia Y, Sun C, Cheng L. Research on Microservice Application Performance
 Saman B. Monitoring and analysis of microservices performance. {\it Journal of
   Computer Science and Control Systems} 2017\string; 10(1)\string: 19.
 
+\bibitem{Venugopal2017}
+Venugopal M. Containerized Microservices architecture. {\it International
+  Journal of Engineering and Computer Science} 2017\string; 6(11)\string:
+  23199–23208.
+
 \bibitem{Hou2019}
 Hou X, Liu J, Li C, Guo M. Unleashing the Scalability Potential of
   Power-Constrained Data Center in the Microservice Era. In: ; 2019\string:
@@ -288,6 +260,10 @@ Pietrantuono R, Russo S, Guerriero A. Testing microservice architectures for
   operational reliability. {\it Software Testing, Verification and Reliability}
   2020\string; 30(2)\string: e1725.
 
+\bibitem{Zaytev2018}
+Zaytsev A. Continuous integration for kubernetes based platform solution.
+  2018.
+
 \bibitem{Huttunen2017}
 Huttunen J, others . Micro service Testing Practices in Public Sector Software
   Projects.  2017.
@@ -306,6 +282,10 @@ Kristiani E, Yang CT, Huang CY, Wang YT, Ko PC. The implementation of a
   cloud-edge computing architecture using OpenStack and Kubernetes for air
   quality monitoring application. {\it Mobile Networks and Applications}
   2020\string: 1--23.
+
+\bibitem{Kalske2017}
+Kalske M. Transforming monolithic architecture towards microservice
+  architecture. In: ; 2018.
 
 \bibitem{Zhang2019}
 Zhang H, Li S, Jia Z, Zhong C, Zhang C. Microservice architecture in reality:
@@ -378,63 +358,64 @@ Li Y, Wang CZ, Li Yc, Su J. Granularity Decision of Microservice Splitting in
 Liu Q. {\it Integrating Game Engines into the Mobile Cloud as Micro-services}.
   PhD thesis. University of Saskatchewan,  2018.
 
-\bibitem{Speth2019}
-Speth S. Issue management for multi-project, multi-team microservice
-  architectures. Master's thesis. University of Stuttgart.  2019.
-
-\bibitem{KalskeM2017}
-Kalske M, M{\"a}kitalo N, Mikkonen T. Challenges When Moving from Monolith to
-  Microservice Architecture. In: ; 2017.
-
-\bibitem{neves2019}
-Neves JCRD. {\it Technical Challenges of Microservices Migration}. PhD thesis.
-  Insititute of Porto,  2019.
-
-\bibitem{Falatiuk2019}
-{Falatiuk} H, {Shirokopetleva} M, {Dudar} Z. Investigation of Architecture and
-  Technology Stack for e-Archive System. In: ; 2019\string: 229-235
-
-\bibitem{Zrzavy2020}
-Zrzavy W. {\it Strategies for IT Product Managers to Manage Microservice
-  Systems in Enterprises}. PhD thesis. Walden University,  2020.
-
-\bibitem{Handel2020}
-H{\"a}ndel L. Microservices in the context of a fast-growing company. 2020.
-
-\bibitem{kleehaus2019}
-Kleehaus M, Matthes F. Challenges in Documenting Microservice-Based IT
-  Landscape: A Survey from an Enterprise Architecture Management Perspective.
-  In: IEEE. ; 2019\string: 11--20.
-
-\bibitem{khan2017}
-Khan A. Microservices in context: Internet of Things - Infrastructure and
-  Architecture. Master's thesis. Linnaeus University, Faculty of Technology,
-  Department of computer science and media technology (CM).  2017.
+\bibitem{Sharaf2019}
+Eldein AIES. {\it A Container-based Architecture for the Design of Portable
+  Cloud Applications}. PhD thesis. Sudan University of Science and Technology,
+  2019.
 
 \bibitem{Hou2020}
 Hou X, Li C, Liu J, Zhang L, Hu Y, Guo M. ANT-man: towards agile power
   management in the microservice era. In: IEEE Computer Society. ; 2020\string:
   1098--1111.
 
-\bibitem{Ville2019}
-Touronen V, others . Microservice architecture patterns with GraphQL.  2019.
-
 \bibitem{Bahadori2018}
 Bahadori K, Vardanega T. Designing and Implementing Elastically Scalable
   Services. Master's thesis. University of Padova, Italy.  2018.
 
+\bibitem{Falatiuk2019}
+{Falatiuk} H, {Shirokopetleva} M, {Dudar} Z. Investigation of Architecture and
+  Technology Stack for e-Archive System. In: ; 2019\string: 229-235
+
 \bibitem{chauvel2018}
 Chauvel F, Solberg A. Using intrusive microservices to enable deep
   customization of multi-tenant SaaS. In: IEEE. ; 2018\string: 30--37.
+
+\bibitem{haugeland2020}
+Haugeland SG. Migrating a Monolithic Architecture to a Customization-Ready
+  Multi-tenant Microservice Architecture. Master's thesis. University Of OSLO.
+  2020.
+
+\bibitem{neves2019}
+Neves JCRD. {\it Technical Challenges of Microservices Migration}. PhD thesis.
+  Insititute of Porto,  2019.
+
+\bibitem{KalskeM2017}
+Kalske M, M{\"a}kitalo N, Mikkonen T. Challenges When Moving from Monolith to
+  Microservice Architecture. In: ; 2017.
+
+\bibitem{khan2017}
+Khan A. Microservices in context: Internet of Things - Infrastructure and
+  Architecture. Master's thesis. Linnaeus University, Faculty of Technology,
+  Department of computer science and media technology (CM).  2017.
 
 \bibitem{ebay}
 Gonchar G. Microservices and Kafka. 2019.
 \newblock
   \url{https://ebaytech.berlin/microservices-and-kafka-part-1-614767d27b20}.
 
+\bibitem{Santos2020}
+Santos N, Silva AR. A Complexity Metric for Microservices Architecture
+  Migration. In: IEEE. ; 2020\string: 169--178.
+
 \bibitem{Mikail2020}
 Boronin M. Hybrid Cloud Migration Challenges. A case study at King. Master's
   thesis. University of Uppsala.  2020.
+
+\bibitem{villamizar2017}
+Villamizar M, Garc{\'e}s O, Ochoa L, et al. Cost comparison of running web
+  applications in the cloud using monolithic, microservice, and AWS Lambda
+  architectures. {\it Service Oriented Computing and Applications} 2017\string;
+  11(2)\string: 233--247.
 
 \bibitem{Monteiro2020}
 Monteiro D, Maia PHM, Rocha LS, Mendon{\c{c}}a NC. Building orchestrated
@@ -451,14 +432,14 @@ Otharson H. Reality Check: 6 Cost-Benefit Considerations When Adopting
 \newblock
   \url{https://thenewstack.io/reality-check-6-cost-benefit-considerations-when-adopting-microservices/}.
 
+\bibitem{Zrzavy2020}
+Zrzavy W. {\it Strategies for IT Product Managers to Manage Microservice
+  Systems in Enterprises}. PhD thesis. Walden University,  2020.
+
 \bibitem{kitchenham2015}
 Kitchenham BA, Budgen D, Brereton P. {\it Evidence-based software engineering
   and systematic reviews}. 4.
 \newblock CRC press .
 \newblock 2015.
-
-\bibitem{ghofrani2018}
-Ghofrani J, L{\"u}bke D. Challenges of Microservices Architecture: A Survey on
-  the State of the Practice.. In: ; 2018\string: 1--8.
 
 \end{thebibliography}

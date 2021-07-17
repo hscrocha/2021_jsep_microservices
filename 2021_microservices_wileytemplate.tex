@@ -10,7 +10,14 @@
 \usepackage{subcaption}
 \usepackage{textcomp}
 \usepackage{xcolor}
-%\usepackage{url}
+%\usepackage[symbol]{footmisc} % Conflicts with something
+\usepackage{hyperref}
+\hypersetup{  
+  colorlinks   = true, %Colours links instead of ugly boxes
+  urlcolor     = blue, %Colour for external hyperlinks
+  linkcolor    = black, %Colour of internal links
+  citecolor   = black %Colour of citations
+}
 
 \usepackage{xspace}
 \usepackage{todonotes}[disable]
