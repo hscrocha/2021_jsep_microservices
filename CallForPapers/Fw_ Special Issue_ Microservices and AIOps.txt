@@ -1,0 +1,41 @@
+From: Henrique Santos Camargos Rocha <Henrique.Rocha@uantwerpen.be>
+Subject: Fw: Special Issue: Microservices and AIOps
+Date: 7 July 2021 at 19:37:29 CEST
+To: Serge Demeyer <serge.demeyer@uantwerpen.be>
+
+Hi Serge,
+ 
+The deadline is going to be extended for July 31. I think it is worth a shot.
+ 
+I am contacting Marco Tulio for him to review the paper and I will take over the writing.
+ 
+Best regards,
+ 
+- Henrique
+
+
+From: Julia Rubin <mjulia@ece.ubc.ca>
+Sent: July 7, 2021 15:08
+To: Henrique Santos Camargos Rocha
+Cc: pengxin; Dongmei Zhang; taoxie; 李青山
+Subject: Re: Special Issue: Microservices and AIOps
+ 
+
+CAUTION: This email originated from outside of the organization. Do not click links or open attachments unless you recognize the sender and know the content is safe.
+
+
+Hi Henrique and thanks for reaching out! Yes, we got multiple requests and will be able to extend the deadline to July 31. The new deadline will appear on the website soon. Hope that gives you enough time to finish the submission. 
+
+Regards, 
+Julia (on behalf of the editors)
+
+On Tue, Jul 6, 2021 at 8:09 PM Henrique Santos Camargos Rocha <Henrique.Rocha@uantwerpen.be> wrote:
+Hello Julia,
+ 
+I just saw your post on the special issue on the Facebook group Software Reengineering Research Community. I have an original work (unpublished) about a Systematic Literature Review on Microservices. I think it is a good fit for the special issue. However, I would need more time to have that paper in proper shape for a journal.
+ 
+Is it possible to have a deadline extension on the submission? 
+ 
+Best regards,
+ 
+- Henrique
