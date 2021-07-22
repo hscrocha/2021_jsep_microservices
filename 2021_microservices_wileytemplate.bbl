@@ -25,9 +25,11 @@ Taibi D, Systa K. From Monolithic Systems to Microservices: A Decomposition
 Danbettinger . What are Microservices. 2019.
 \newblock \url{youtu.be/CdBtNQZH8a4}.
 
-\bibitem{Pavlovic2020}
-Uros~Pavlovic GA. Docker: Top 7 Benefits of Containerization. In: ; 2020.
-\newblock \url{https://hentsu.com/docker-containers-top-7-benefits/}.
+\bibitem{Pavlovic2020monolith}
+TransparantData . Monoliths vs. microservices — benefits and drawbacks, a
+  comparision. In: ; 2020.
+\newblock
+  \url{https://medium.com/transparent-data-eng/monoliths-vs-microservices-benefits-and-drawbacks-a-comparision-9e7a462b8e3a}.
 
 \bibitem{Lenga2019}
 Lenga S. {\it Modernization of Monolithic Legacy Applications towards a
@@ -66,8 +68,9 @@ Goldsmith K. Microservices at Spotify. In: ; 2015.
 \newblock \url{youtu.be/7LGPeBgNFuU}.
 
 \bibitem{Alpers2015}
-Alpers S, Becker C, Oberweis A, Schuster T. Microservice based tool support for
-  business process modelling. In: IEEE. ; 2015\string: 71--78.
+Alpers S, Becker C, Oberweis A, Schuster T. Microservice Based Tool Support for
+  Business Process Modelling. In: IEEE Computer Society; 2015; Los Alamitos,
+  CA, USA\string: 71-78
 
 \bibitem{Meshenberg2016}
 Meshenberg R. Microservices at Netflix Scale: Principles, Tradeoffs and Lessons
@@ -169,7 +172,7 @@ Rosa F. {\it Analysis of requirements and technologies to migrate software
   development to the PaaS model}. PhD thesis. NOVA Information Management
   School,  2018.
 
-\bibitem{leo2019}
+\bibitem{Leo2019}
 Leo Z. Achieving a Reusable Reference Architecture for Microservices in Cloud
   Environments. bachelor's thesis.  2019.
 \newblock Malardalen University, School of Innovation, Design and Engineering,
@@ -283,9 +286,9 @@ Kristiani E, Yang CT, Huang CY, Wang YT, Ko PC. The implementation of a
   quality monitoring application. {\it Mobile Networks and Applications}
   2020\string: 1--23.
 
-\bibitem{Kalske2017}
-Kalske M. Transforming monolithic architecture towards microservice
-  architecture. In: ; 2018.
+\bibitem{Kalske2017paper}
+Kalske M, M{\"a}kitalo N, Mikkonen T. Challenges when moving from monolith to
+  microservice architecture. In: Springer. ; 2017\string: 32--47.
 
 \bibitem{Zhang2019}
 Zhang H, Li S, Jia Z, Zhong C, Zhang C. Microservice architecture in reality:
