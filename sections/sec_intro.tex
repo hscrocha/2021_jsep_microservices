@@ -2,23 +2,31 @@
 
 \section{Introduction}
 
-During the last ten years, cloud computing, and the relatively low cost of server renting services like amazon web services, azure, and google cloud have opened the opportunity to build businesses around cloud technologies. This model also brings new challenges to scale and maintain systems.\cite{Claus2016} Inspired by service-oriented computing, microservices are small applications with a single responsibility that can be deployed, scaled, and tested independently. The concept was created as service-oriented architecture (SOA) 10 years back. It is about fragmenting complex applications into small pieces and a fluid delivery model that delivers services on demand, thus improving performance.\cite{Larrucea2018}
+During the last ten years, cloud computing and the relatively low cost of server renting services (e.g., amazon web services, azure, google cloud) have opened the opportunity for a new style of distributed applications running on the world-wide web (instead of dedicated servers) and accessed via mobile apps (instead of desktop computers).
+Cloud computing offered disruptive businesses (e.g., Netflix, Spotify, Zalando, Amazon, Uber) the necessary strategic advantage to operate at global scale servicing millions of concurrent users.
 
-Microservices are an architectural style that structures an application as a collection of independent modules. These modules are highly maintainable, testable, loosely coupled, independently deployable, and each isolates a functionality. Therefore, we can split the application into distinct independent services.\cite{thones2015} Recently, microservice architecture became a strategic solution for decomposing large monolithic applications into smaller manageable services.\cite{Taibi2019} 
-%In microservices, every application function is its service, own container, and communicate via Application programming interface (API)~\cite{Danbettinger2019}.
+Microservices are \emph{the} architectural style that enables such ultra-scaleable applications to be deployed in the cloud.
+They divide complex applications into small pieces and a fluid delivery model that delivers services on demand, thus improving performance~\cite{Larrucea2018}.
+Every function in the application is implemented as a single service, deployed on its own container and accessed via an Application Programming Interface (API)~\cite{Danbettinger2019}.
 
-For several years, monolithic architecture was the widely-used architecture for building web and mobile applications. The server-side system is based on a single application and is easy to develop, deploy, and manage.\cite{Danbettinger2019} The advantage is that if we want to change functionalities, it is enough to implement these changes in one place architecture-wise.\cite{Pavlovic2020monolith} Single point of failure, technology lock-in, and limited scalability are a few other drawbacks of monolithic applications. Growing companies are considering other architecture styles such as microservices.\cite{Lenga2019, Jag2017, Rodrigue2016}
+The design, development, and operation of microservices are picking up more momentum in the industry.
+Companies like spotify and netflix are working day-by-day on the practical implementation of microservices~\cite{Kevin2015, Meshenberg2016}.
+At the same time, academic work on the topic is still at an early stage, witness mapping studies on the subject~\cite{Soldani2018, Dragoni2017, Olaf2016}.
+Best practices have accumulated in a heterogeneous collection of publications, covering research as well as industrial perspectives.
+As a consequence, the field is lacking a clear picture of the challenges one needs to overcome while adopting microservices and the technologies that can be used in implementing them.
 
-The design, development, and operation of microservices are picking up more momentum in the industry. At the same time, academic work on the topic is at an early stage.\cite{Soldani2018, Dragoni2017, Olaf2016} 
-Companies are working day-by-day on the practical implementation of microservices.\cite{Kevin2015, Alpers2015} For instance, the microservices architecture allowed netflix\cite{Meshenberg2016} to greatly speed up the development and deployment of its platform and services.
+In this paper, we report on a systematic literature survey on microservices, covering 81 studies from both academic and grey literature, carefully selected from a global corpus of \TOFIX{XXX} papers.
+We characterise the challenges reported in the experience reports concerning the adoption of microservices and classify the technologies involved in leveraging the implementation of microservices.
+We complement our classification with a discussion on possible solutions for the challenges and shortcomings for the technologies, as such establishing a research agenda for future research.
 
-The academia is joining microservices architectural patterns to other disciplines. For example, devOps and internet of things (IoT).\cite{Osses2019} However, there is still no clear perspective of emerging recurrent solutions or design decisions in microservices both in industry and academia.\cite{Soldani2018} Despite the hype for microservices, both industry and academia still lack consensus on the adequate conditions to embrace and benefit from this new paradigm.\cite{Dragoni2017} It also brings new challenges in scaling and maintaining the system as fast as we are moving towards using a microservices architecture.
 
-While many organizations like Netflix,\cite{Meshenberg2016} Uber,\cite{Uber} and Amazon\cite{Amazon} have proposed solutions to certain challenges, they focus only on their organizational perspective. It is also suggested that every challenge is tailored for each company and the solutions proposed by one may not be well-suited to others.\cite{Kevin2015} Many aspects of the practical challenges in microservices are still unexplored. This makes it difficult for researchers or practitioners to know where to start the adoption process. The goal of this paper is to characterize the possible overall challenges faced when adopting microservices and technologies involved in microservice implementation. To achieve this goal, we conducted a systematic literature review.\cite{Kitchenham2007} More specifically, we designed two research questions, the first one related to the challenges and the second to technology solutions in implementing microservice, to guide our literature review. 
-%
-The main contribution of the paper includes the recent challenges after the introduction of microservice and a list of technologies that have been used in leveraging the implementation of microservice. We also discuss proposed solutions we found in the literature to address the main challenges.
-
-The rest of the paper is structured as follows. In Section~\ref{sec:related-work}, we present the related work. In Section~\ref{sec:study-design}, we describe the method and protocol followed in our systematic literature review. In Section~\ref{sec:results}, we answer the research questions and cover the challenges and technologies used in microservice. In Section~\ref{sec:discussion}, we discuss possible solutions for challenges mentioned in the studied literature. In Section~\ref{sec:threats}, we cover the threats to the validity. Finally, in Section~\ref{sec:conclusion}, we conclude the paper and outline future work.
+The rest of the paper is structured as follows.
+In Section~\ref{sec:related-work}, we present the related work.
+In Section~\ref{sec:study-design}, we describe the method and protocol followed in our systematic literature review.
+In Section~\ref{sec:results}, we answer the research questions and cover the challenges and technologies used in microservices.
+In Section~\ref{sec:discussion}, we discuss possible solutions for challenges mentioned in the studied literature.
+In Section~\ref{sec:threats}, we cover the threats to the validity.
+Finally, in Section~\ref{sec:conclusion}, we conclude the paper and outline future work.
 
 
 

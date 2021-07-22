@@ -1,50 +1,24 @@
 \begin{thebibliography}{10}
 \providecommand \doibase [0]{http://dx.doi.org/}%
 
-\bibitem{Claus2016}
-Pahl. C, Jamshidi. P. Microservices: A Systematic Mapping Study. In: INSTICC.
-  SciTePress; 2016\string: 137-146
-
 \bibitem{Larrucea2018}
 {Larrucea} X, {Santamaria} I, {Colomo-Palacios} R, {Ebert} C. Microservices.
   {\it IEEE Software} 2018\string; 35(3)\string: 96-100.
 \newblock \href {\doibase 10.1109/MS.2018.2141030} {doi:
   10.1109/MS.2018.2141030}
 
-\bibitem{thones2015}
-Th{\"o}nes J. Microservices. {\it IEEE software} 2015\string; 32(1)\string:
-  116--116.
-
-\bibitem{Taibi2019}
-Taibi D, Systa K. From Monolithic Systems to Microservices: A Decomposition
-  Framework based on Process Mining. In: 9th International Conference on Cloud
-  Computing and Services Science (CLOSER). ; 2019; Heraklion (Greece)\string:
-  153--164.
-
 \bibitem{Danbettinger2019}
 Danbettinger . What are Microservices. 2019.
 \newblock \url{youtu.be/CdBtNQZH8a4}.
 
-\bibitem{Pavlovic2020monolith}
-TransparantData . Monoliths vs. microservices — benefits and drawbacks, a
-  comparision. In: ; 2020.
-\newblock
-  \url{https://medium.com/transparent-data-eng/monoliths-vs-microservices-benefits-and-drawbacks-a-comparision-9e7a462b8e3a}.
+\bibitem{Kevin2015}
+Goldsmith K. Microservices at Spotify. In: ; 2015.
+\newblock \url{youtu.be/7LGPeBgNFuU}.
 
-\bibitem{Lenga2019}
-Lenga S. {\it Modernization of Monolithic Legacy Applications towards a
-  Microservice Architecture with ExplorViz}. PhD thesis. Kiel University,
-  2019.
-
-\bibitem{Jag2017}
-Ramaswamy J. Cloud Migration with a Microservice Architecture: A Coca Cola Case
-  Study. 2017.
-\newblock
-  \url{https://www.brighttalk.com/webcast/8481/255521/cloud-migration-with-a-microservice-architecture-a-coca-cola-case-study}.
-
-\bibitem{Rodrigue2016}
-Schaefer R. From Monolith to Microservices at Zalando. 2016.
-\newblock \url{youtu.be/gEeHZwjwehs}.
+\bibitem{Meshenberg2016}
+Meshenberg R. Microservices at Netflix Scale: Principles, Tradeoffs and Lessons
+  Learned. {Goto Conference}. 2016.
+\newblock \url{youtu.be/57UK46qfBLY}.
 
 \bibitem{Soldani2018}
 Soldani J, Tamburri D, Heuvel WJ. The Pains and Gains of Microservices: A
@@ -62,20 +36,6 @@ Dragoni N, Giallorenzo S, Lafuente AL, et al. {\it Microservices: Yesterday,
 \bibitem{Olaf2016}
 Zimmermann O. Microservices tenets. {\it Computer Science-Research and
   Development} 2017\string; 32(3-4)\string: 301--310.
-
-\bibitem{Kevin2015}
-Goldsmith K. Microservices at Spotify. In: ; 2015.
-\newblock \url{youtu.be/7LGPeBgNFuU}.
-
-\bibitem{Alpers2015}
-Alpers S, Becker C, Oberweis A, Schuster T. Microservice Based Tool Support for
-  Business Process Modelling. In: IEEE Computer Society; 2015; Los Alamitos,
-  CA, USA\string: 71-78
-
-\bibitem{Meshenberg2016}
-Meshenberg R. Microservices at Netflix Scale: Principles, Tradeoffs and Lessons
-  Learned. {Goto Conference}. 2016.
-\newblock \url{youtu.be/57UK46qfBLY}.
 
 \bibitem{Osses2019}
 M{\'{a}}rquez G, Osses F, Astudillo H. An Exploratory Study of Academic
@@ -109,6 +69,10 @@ Ghani I, Wan-Kadir WM, Mustafa A, Babir M. Microservice Testing Approaches: A
 Di~Francesco P, Lago P, Malavolta I. Architecting with microservices: A
   systematic mapping study. {\it Journal of Systems and Software} 2019\string;
   150\string: 77--97.
+
+\bibitem{Claus2016}
+Pahl. C, Jamshidi. P. Microservices: A Systematic Mapping Study. In: INSTICC.
+  SciTePress; 2016\string: 137-146
 
 \bibitem{ghofrani2018}
 Ghofrani J, L{\"u}bke D. Challenges of Microservices Architecture: A Survey on
@@ -190,6 +154,11 @@ Overeem M, Jansen S. Continuous Migration of Mass Customized Applications.. In:
 
 \bibitem{Difrancesco2017}
 Di~Francesco P. Architecting microservices. In: IEEE. ; 2017\string: 224--229.
+
+\bibitem{Lenga2019}
+Lenga S. {\it Modernization of Monolithic Legacy Applications towards a
+  Microservice Architecture with ExplorViz}. PhD thesis. Kiel University,
+  2019.
 
 \bibitem{Kamimura2018}
 Kamimura M, Yano K, Hatano T, Matsuo A. Extracting Candidates of Microservices
@@ -343,6 +312,12 @@ Terzi{\'c} B, Dimitrieski V, Kordi{\'c} S, Milosavljevi{\'c} G, Lukovi{\'c} I.
 George F. Challenges in Implementing Microservices. 2015.
 \newblock \url{youtu.be/yPf5MfOZPY0}.
 
+\bibitem{Taibi2019}
+Taibi D, Systa K. From Monolithic Systems to Microservices: A Decomposition
+  Framework based on Process Mining. In: 9th International Conference on Cloud
+  Computing and Services Science (CLOSER). ; 2019; Heraklion (Greece)\string:
+  153--164.
+
 \bibitem{Carvalho2019}
 Carvalho L, Garcia A, Assun\c{c}\~{a}o WKG, Mello dR, Lima dMJ. Analysis of the
   Criteria Adopted in Industry to Extract Microservices. In: CESSER-IP '19.
@@ -419,6 +394,10 @@ Villamizar M, Garc{\'e}s O, Ochoa L, et al. Cost comparison of running web
   applications in the cloud using monolithic, microservice, and AWS Lambda
   architectures. {\it Service Oriented Computing and Applications} 2017\string;
   11(2)\string: 233--247.
+
+\bibitem{Rodrigue2016}
+Schaefer R. From Monolith to Microservices at Zalando. 2016.
+\newblock \url{youtu.be/gEeHZwjwehs}.
 
 \bibitem{Monteiro2020}
 Monteiro D, Maia PHM, Rocha LS, Mendon{\c{c}}a NC. Building orchestrated
