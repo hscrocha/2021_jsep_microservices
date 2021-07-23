@@ -2,78 +2,72 @@
 
 \section{Discussion}\label{sec:discussion}
 
-In this section, we describe the possible solutions for challenges that we encountered during our systematic literature review. Whenever possible we also link the technologies we presented to the appropriate challenge. Therefore, we discuss the links between the results we presented from our two research questions (Sections~\ref{sec:results-rq1} and~\ref{sec:results-rq2}), focusing on how to address the challenges, i.e., we show the challenges we encountered and discuss the solutions and technologies used to address each challenge.
+In this section, we describe the possible solutions we encountered for the top-10 challenges. Whenever possible, we also link the technologies we presented to the appropriate challenge. %Therefore, we discuss the links between the presented results from our two research questions (Sections~\ref{sec:results-rq1} and~\ref{sec:results-rq2}), focusing on how to address the challenges, i.e., we show the challenges we encountered and discuss the solutions and technologies used to address the top-10 challenges.
 
 \subsection{Migration}%#1
 
-\par Before splitting or migrating the application into multiple services we need to understand its scope and architecture. Components that are used by most users should be considered first for migration. 
+Before splitting or migrating the application into multiple services we need to understand its scope and architecture. Components that are used by most users should be considered first for migration. 
+%
+We can employ the SArF method based on clustering to identify candidates in the source code to be turned into microservices. The method also visualizes the extracted candidates to show the relationship between them and the overall structure. The candidates and visualization help the developers to capture the overview of the whole system~\cite{Kamimura2018}.
 
-\par To find the candidates for microservice a method that identifies the candidates of microservices from the source code by using software clustering algorithm SArF with the relation of "program groups" and "data" can be used. The method also visualizes the extracted candidates to show the relationship between extracted candidates and the whole structure. The candidates and visualization help the developers to capture the overview of the whole system and facilitated a dialogue with customers~\cite{Kamimura2018}.
+In database migration, MongoDB and Meteor Framework, both provided tools for updating the upcoming migration host. Public clouds offer many services that help with the goals of this optimization, which makes it a logical choice to migrate the application hosting server onto a Cloud Service Provider (CSP)~\cite{Tuuli2020}. %Also, GCP offers its Kubernetes as a service (GKE) as part of its services. It was suitable as the target destination for the application containers~\cite{haugeland2020}.
 
-\par Database migration, mongoDB and meteor framework, both provided the necessary tools for updating the upcoming migration host. Google cloud platform (GCP) is an option for the application destination. Public cloud offered many services that would help with the goals of this optimization, it was a logical choice to migrate the application hosting server onto a Cloud Service Provider (CSP)~\cite{Tuuli2020}. Also, GCP offers its Kubernetes as a service (GKE) as part of its services. It was suitable as the target destination for the application containers~\cite{haugeland2020}. 
+%Migration triggers are handled by different strategies as follows~\cite{overeem2018}:
+%(i) change of model by modeler - all existing models could be changed instead of a single model;
+%(ii) change to the transformation environment - updated packages need to be redeployed to upgrade the instances;
+%and (iii) change to the runtime environment - the application needs to be migrated and then Incremental migration. 
 
-Migration triggers are handled by different strategies as follows~\cite{overeem2018}:
-\begin{itemize}
-  \item Change of model by modeler - all existing models could be changed instead of a single model.
-  \item Change to the transformation environment - updated packages need to be redeployed to upgrade the instances.
-  \item Change to the runtime environment - the application needs to be migrated and then Incremental migration. 
-\end{itemize}
-
-\par The migration process can be carried out by following ideas below:
-\begin{itemize}
-  \item Microservice identification where available software artifacts (e.g., source code, documentation, execution traces, etc.) of the monolithic application are to be analyzed to determine the corresponding microservices.
-  \item Microservice packaging where the necessary transformations are to be performed on the source code of the identified~\cite{selmadji2020}.
-  \item Many organizations consider a gradual process of moving to the cloud with hybrid cloud architecture~\cite{Mikail2020}.
-  \item For managing common code, the study enumerated several options employed by the participants. While most participants rely on promises and challenges of Microservices~\cite{wang2020}, an exploratory study shared libraries which are the emerging sidecar technology could be a promising and elegant microservice-native solution to this problem. 
-  \item Numerous options for managing application programming interface (API) are there. API gateways and client libraries, although not adopted by most of the practitioners and have a high potential to mitigate the burden related to managing API changes~\cite{wang2020}. 
-  \item Options for supporting product variants are there. Each of these solutions has advantages and disadvantages, with most practitioners applying a role-based access model to support different product offerings within the same code base. 
-\end{itemize}
+There are some practices to aid the migration process.
+For instance, service identification where we analyze artifacts (e.g., source code, documentation) from the monolithic application to decide the corresponding microservices.
+%
+Another practice is packaging the microservice where the transformations are to be performed on the source code~\cite{selmadji2020}.
+%
+Many organizations consider a gradual process of moving to the cloud with hybrid cloud architecture~\cite{Mikail2020}.
+%  \item For managing common code, the study enumerated several options employed by the participants. While most participants rely on promises and challenges of Microservices~\cite{wang2020}, an exploratory study shared libraries which are the emerging sidecar technology could be a promising and elegant microservice-native solution to this problem. 
+Numerous options for managing the application programming interface (API) are there. The API gateways and client libraries, although not adopted by most of the practitioners and have a high potential to mitigate the burden related to managing API changes~\cite{wang2020}.
+%  \item Options for supporting product variants are there. Each of these solutions has advantages and disadvantages, with most practitioners applying a role-based access model to support different product offerings within the same code base. 
 
 
 \subsection{Performance}%#2
-The increase in resource usage may cause a microservices-based application to execute slower. We can overcome this challenge by introducing additional servers. Logging in any application can be a part of the solution - we can log performance data and detect the problems. We should take advantage of logging to store performance data in a repository so that we can analyze the data at a later point in time. We can implement throttling, handle service timeouts, implement dedicated thread pools, implement circuit breakers and take advantage of asynchronous programming to boost the performance of microservice-based applications~\cite{Ghebremicael2017, Johansson2019, Zhihui2020}.
+The increase in resource usage may cause a microservices-based application to execute slower. We can overcome this challenge by introducing additional servers. Logs can help identify bottlenecks, as we can log performance data and detect the problems. %We should take advantage of logging to store performance data in a repository so that we can analyze the data at a later point in time. 
+We can implement throttling, handle service timeouts, implement dedicated thread pools, implement circuit breakers and take advantage of asynchronous programming to boost the performance of microservice-based applications~\cite{Ghebremicael2017, Johansson2019, Zhihui2020}.
 
-\par Apache JMeter can be used to performance-test our microservice applications. Microservice criticality factor metric (MCF) to measure the overall impact of performance scaling on a microservice from the whole application's perspective~\cite{Hou2019}. Beethoven (a platform composed of a reference architecture) could be used to measure and increase the performance of microservices~\cite{Monteiro2020}. 
+Apache JMeter can be used to performance-test our microservice applications. Microservice criticality factor metric (MCF) to measure the overall impact of performance scaling on a microservice from the whole application's perspective~\cite{Hou2019}. Beethoven (a platform composed of a reference architecture) could be used to measure and increase the performance of microservices~\cite{Monteiro2020}. 
 
 
 \subsection{Scalability}%#3
- To scale successfully, each microservice needs to scale both individually, and as part of a larger system. Doing so requires that the dependencies of each microsystem also to scale with it. We can containerize each microservice using docker~\cite{coulson2020, Bahadori2018}.
-
-\par Kubernetes can manage containers. Kubernetes can be configured to auto-scale based on the load. Kubernetes can identify the application instances, monitor their loads, and automatically scale up and down~\cite{McElhiney2018, khan2020}
+ To scale successfully, each microservice needs to scale both individually, and as part of a larger system. Doing so requires that the dependencies of each microsystem also to scale with it. We can containerize and manage  microservices using Docker or Kubernetes~\cite{coulson2020, Bahadori2018, McElhiney2018, khan2020}.
 
 
 \subsection{Testing}%#4
-The best approach to solving testing challenges is adopting various testing methodologies, tools and leveraging continuous integration capabilities through automation and standard agile methodologies.
-Some of the options to consider are enhanced microservice adaptive reliability testing (EMART)~\cite{Russo2020}, Apache Jmeter~\cite{Johansson2019}, testing as a service~\cite{Vanska2019}, integration testing, test doubles~\cite{Huttunen2017}, end-to-end testing, consumer-driven contract (CDC) testing,\footnote{Consumer-driven contract testing ensures that a provider is compatible with the expectations that the consumer has of it} a/b testing~\cite{Zaytev2018, Dmitrii2019}. Good quality tooling is needed like chaos monkey which will do destructive testing in the production environment to understand the resilience of system~\cite{Netflix}.
+The best approach to solving testing challenges is adopting various testing methodologies, tools and leveraging continuous integration capabilities through automation.
+Some of the options to consider are enhanced microservice adaptive reliability testing (EMART)~\cite{Russo2020}, Apache Jmeter~\cite{Johansson2019}, testing as a service~\cite{Vanska2019}, integration testing, test doubles~\cite{Huttunen2017}, end-to-end testing, a/b testing~\cite{Zaytev2018, Dmitrii2019}. Good quality tooling is needed like chaos monkey which will do destructive testing in the production environment to understand the resilience of system~\cite{Netflix}.
 
 
 \subsection{Monitoring}%#5
-We can monitor microservices by using open-source tools like prometheus with grafana APIs by creating gauges and matrices, google cloud platform (GCP) stackdriver, kubernetes monitoring, amazon cloudwatch~\cite{Kalske2017paper, Zhang2019, Monterio2018, Venugopal2017}.
+We can monitor microservices by using open-source tools like Prometheus with Grafana APIs by creating gauges and matrices, google cloud platform (GCP) Stackdriver, Kubernetes monitoring, and Amazon cloudwatch~\cite{Kalske2017paper, Zhang2019, Monterio2018, Venugopal2017}.
 
-\par Ganglia monitoring system is one of the distributed monitoring tools for high-performance computing systems~\cite{Kristiani2020}. The proposed monitoring framework includes an integrated scheduling tool, data collector, big data storage, elastic scaling manager~\cite{Zhihui2020}. For device failure detection in microservices kieker trace analysis tool is used to analyze the application and the trace tool used for visualizing are graphViz, gnuplotzunit~\cite{Saman2017}.
+Ganglia monitoring system is one of the distributed monitoring tools for high-performance computing systems~\cite{Kristiani2020}. The proposed monitoring framework includes an integrated scheduling tool, data collector, big data storage, elastic scaling manager~\cite{Zhihui2020}. %For device failure detection in microservices kieker trace analysis tool is used to analyze the application and the trace tool used for visualizing are graphViz, gnuplotzunit~\cite{Saman2017}.
+%
+%The conceptual model of a dashboard for monitoring is proposed and this model consists of components, the interaction between components, and the requirements for each component.
+%
+A black-box approach and monitoring of the microservices through its endpoint is done~\cite{Utomo2020}. Spotify\cite{Kevin2015} and Netflix\cite{Netflix} employ their tools, Heroic and Atlas, for monitoring.
 
-\par The conceptual model of a dashboard for monitoring is proposed and this model consists of components, the interaction between components, and the requirements for each component. 
-A black-box approach and monitoring of the microservices through its endpoint is done~\cite{Utomo2020}.~\cite{Kevin2015} heroic tool is used for monitoring at Spotify. Atlas - cloud monitoring framework is a newly introduced tool by netflix is getting popular~\cite{Netflix}. 
-
-\par ExplorViz uses kieker (dynamic analysis tool) to instrument software systems for a dynamical analysis of their runtime behavior~\cite{Lenga2019}. Instead of using kieker’s analysis methods, explorviz uses its own and instructs kieker to send the gathered monitoring data called records. The Analysis service creates traces from these records which are sent to the Landscape service which creates the models which are visualized in the frontend service of explorViz. The assessment confirmed that one of the central prerequisites for the effective usage of explorViz is a thorough prior knowledge of the entire monolithic architecture. The evaluation also demonstrated that finding a suitable division into self-contained systems or microservices is a highly complex process that requires experience and time.
+%ExplorViz uses kieker (dynamic analysis tool) to instrument software systems for a dynamical analysis of their runtime behavior~\cite{Lenga2019}. Instead of using kieker’s analysis methods, explorviz uses its own and instructs kieker to send the gathered monitoring data called records. The Analysis service creates traces from these records which are sent to the Landscape service which creates the models which are visualized in the frontend service of explorViz. The assessment confirmed that one of the central prerequisites for the effective usage of explorViz is a thorough prior knowledge of the entire monolithic architecture. The evaluation also demonstrated that finding a suitable division into self-contained systems or microservices is a highly complex process that requires experience and time.
 
 
 \subsection{Security}%#6
 The first step to a secure solution based on microservices is to ensure security which should be included in the design. Some fundamental tenets~\cite{Olaf2016} for all designs are: 
-
-\begin{itemize}
-\item Encrypt all communications (using https or transport layer security).
-\item Authenticate all access requests.
-\item Do not hard code certificates, passwords, or any form of secrets within the code.
-\item Use devsecops tools designed for microservice architecture environments to scan code as it is developed.
-\item Define the APIs and strictly make sure all communications comply.
-
-\end{itemize}
+(i) encrypt all communications (using https or transport layer security); 
+(ii) authenticate all access requests;
+(iii) do not hard code certificates, passwords, or any form of secrets within the code;
+(iv) use devsecops tools designed for microservice architecture environments to scan code as it is developed;
+and (v) define the APIs and strictly make sure all communications comply.
 
 In a typical microservices architecture, communication between the services can be in the same or different machines or even between different data centers. Due to this complexity in the communication, security in a microservices-based application is important to authorize access to a protected resource.
 In a monolith, the facade pattern aggregates the data that is retrieved from multiple services. On the contrary, in a microservices-based application, the API Gateway is used for the same purpose. The API Gateway pattern can be used in a microservices-based application to secure access to the microservices by abstracting the underlying microservices from external clients. The other strategies that are adopted include implementation of ssl, oauth, and containerization~\cite{Zaytev2018, tenev2019, Monterio2018}. 
-
-\par Some of the best practices in securing microservices are building security from the start, deploying security at container level, multifactor authentication, user identity and access tokens such as oauth 2.0 and openid~\cite{Gonchar2017}. Amazon~\cite{Amazon} uses amazon vpc to secure the traffic across cloud.
+%
+Some of the best practices in securing microservices are building security from the start, deploying security at container level, multifactor authentication, user identity and access tokens such as oauth 2.0 and openid~\cite{Gonchar2017}. Amazon~\cite{Amazon} uses amazon vpc to secure the traffic across cloud.
 
 
 \subsection{Cost}%#7
@@ -82,58 +76,54 @@ Cost could be an significant factor when building microservices~\cite{Koschel201
 Adopting a microservices architecture quickly defray those costs by returning large amounts of business and technical value~\cite{McElhiney2018, Leo2019}. A microservice architecture, with fewer application dependencies and simple APIs will immediately reduce the time and money spent on application maintenance. Savings on application maintenance have shown to be more than enough to cover the initial costs within a few years~\cite{Otharson2019}. 
 A good set of guidelines and practices at the company level is needed. After the load was removed, the instances should be terminated automatically by aws to save cost~\cite{McElhiney2018}. 
 
-\par Testing the off-the-shelf hardware to reduce hardware costs. Invest in the team to create white box solutions that focused on reducing costs, using a reference architecture. AWS Lambda functions can be triggered based on events ingested into amazon sqs queues, s3 buckets where aws manages the polling infrastructure on our behalf with no additional cost\cite{Ndungu2019, Zhang2019, Koschel2017}. The use of services specifically designed to deploy and scale microservices, such as aws lambda is used to reduce infrastructure costs by 70\% and Microservice implemented with play reduce up to 13\% cost~\cite{villamizar2017}.
+%Testing the off-the-shelf hardware to reduce hardware costs. Invest in the team to create white box solutions that focused on reducing costs, using a reference architecture. AWS Lambda functions can be triggered based on events ingested into amazon sqs queues, s3 buckets where aws manages the polling infrastructure on our behalf with no additional cost\cite{Ndungu2019, Zhang2019, Koschel2017}. The use of services specifically designed to deploy and scale microservices, such as aws lambda is used to reduce infrastructure costs by 70\% and Microservice implemented with play reduce up to 13\% cost~\cite{villamizar2017}.
 
 \subsection{Complexity}%#8
-Microservices architecture can be more complex than legacy applications. To handle this complexity and reduce the risks involved, we should use the right tools and technologies in place. 
-Complexity can be addressed for each and every situation. If the complexity is based on integrating the legacy and internal system on the cloud services then we can use the platform as a service (PaaS) model~\cite{rosa2018} like follows application platform as a services (aPaaS), database platform services (dbPaaS), function platform services (fPaaS), business analytics platform services (baPaaS), business process management services (bpmPaaS), business rule platform services (brPaaS), enterprise horizontal portal services (Portal PaaS), communications platform services (cPaaS). When the applications are moving on-premise to software as a service (Saas), directly changing the code is not feasible because many customers share one instance of an application code. 
+Microservices architecture can be more complex than legacy applications. To handle this complexity and reduce the risks involved, we should use the right tools and technologies in place.
+%Complexity can be addressed for each and every situation.
+If the complexity is based on integrating the legacy and internal system on the cloud services then we can use the platform as a service (PaaS) model\cite{rosa2018}. When the applications are moving on-premise to software as a service (SaaS), directly changing the code is not feasible because many customers share one instance of an application code.
 %
-Chauvel and Solberg~\cite{chauvel2018} propose an approach to enable deep customization on multi-tenant saas using intrusive microservices.
-%
-\par Another possible solution is adding a service mesh to microservices that can improve visibility, monitoring, management, and security~\cite{Zaytev2018, Ndungu2019}. A service mesh allows developers to make changes without touching the application code itself. It provides the ability to mirror and monitor traffic on multiple versions of the same service, which lets developers test capabilities before deployment and determine the best way to route traffic through the system for specific types of use patterns~\cite{Premchand2018, gozneli2020}.
+Chauvel and Solberg~\cite{chauvel2018} propose an approach to enable deep customization on multi-tenant SaaS using intrusive microservices.
 
-\par MicroBuilder is the tool used for the specification of software architecture that follows REST microservice design principles. MicroBuilder comprises MicroDSL and MicroGenerator modules. The MicroDSL module provides the MicroDSL domain-specific language used for the specification of microservice architecture~\cite{Branko2018}.
+Another possible solution is adding a service mesh to microservices that can improve visibility, monitoring, management, and security~\cite{Zaytev2018, Ndungu2019}. A service mesh allows developers to make changes without touching the application code itself. It provides the ability to mirror and monitor traffic on multiple versions of the same service, which lets developers test capabilities before deployment and determine the best way to route traffic through the system for specific types of use patterns~\cite{Premchand2018, gozneli2020}.
+
+%MicroBuilder is the tool used for the specification of software architecture that follows REST microservice design principles. MicroBuilder comprises MicroDSL and MicroGenerator modules. The MicroDSL module provides the MicroDSL domain-specific language used for the specification of microservice architecture~\cite{Branko2018}.
 
 
 \subsection{Decomposition}%#9
 
-In transitioning an existing monolith to a microservices, we would typically need to decompose the existing application into granular microservices~\cite{Taibi2019}. During this transitioning process, we would typically need to decompose the monolith to building more and more granular microservices to suit the business needs. Once this is accomplished, there would be more moving parts in the application~\cite{Carvalho2019}. As a result, this would lead to operational and infrastructural overheads, i.e., configuration management, security, provisioning, integration, deployment, monitoring, etc. One of the ways to reduce these complexities is by using containerization. In using containerization, provisioning, configuration, and deployment of microservices would be simplified~\cite{Zhang2019}.
+In transitioning an existing monolith to a microservices, we would typically need to decompose the existing application into granular microservices~\cite{Taibi2019}. During this transitioning process, we would typically need to decompose the monolith to building more and more granular microservices to suit the business needs. Once this is accomplished, there would be more moving parts in the application~\cite{Carvalho2019}. As a result, this would lead to operational and infrastructural overheads, i.e., configuration management, security, provisioning, integration, deployment, monitoring, etc. One way to reduce these complexities is by using containerization. In using containerization, provisioning, configuration, and deployment of microservices would be simplified~\cite{Zhang2019}.
 
-\par To define the functional scope of microservices many authors propose using domain-driven design~\cite{Merson2020, neves2019, Zrzavy2020}. 
-The key concepts of domain-driven design that helps in defining scopes are: 
+To define the functional scope of microservices many authors propose using domain-driven design~\cite{Merson2020, neves2019, Zrzavy2020}. 
+The key concepts of domain-driven design that helps in defining scopes are:
+(i) analyze domain;
+(ii) define bounded context;
+(iii) define entities, aggregates, and services;
+and (iv) finally identify microservices. 
 
-\begin{itemize}
-\item Step 1: analyze domain.
-\item Step 2: define bounded context.
-\item Step 3: define entities, aggregates, and services. 
-\item Step 4: finally identify microservices. 
-\end{itemize}
+%A service can have the scope of microservice. Microservice can have the scope of a bounded context. For inter-microservice interaction, we can use domain events with asynchronous messaging API calls, and service data replication.
 
-A service can have the scope of microservice. Microservice can have the scope of a bounded context. For inter-microservice interaction, we can use domain events with asynchronous messaging API calls, and service data replication.
-
-\par Some factors must be considered when defining the size of a microservice and when we are defining a microservice granularity. Moreover, several more factors must be considered and chosen wisely to achieve a successful implementation and performance.
-The most important point is balancing. Although we may consider different factors to define the level of granularity, the key purpose is to analyze all the applicable criteria and to evaluate the possible tradeoffs that will have to be made in this process. Key points to consider are as follows~\cite{Yan2020}:
-
-\begin{itemize}
-\item Get a clear picture of the solution architecture. 
-\item Functional decomposition patterns must be applied, this helps in defining services and splitting them.
-\item Separate reusable activities into reusable services.
+Some factors must be considered when defining the size of a microservice and when we are defining a microservice granularity. Moreover, more factors must be considered to achieve a successful implementation and performance.
+The most important point is balancing. Although we may consider different factors to define the level of granularity, the key purpose is to analyze all the applicable criteria and to evaluate the possible tradeoffs that will have to be made in this process. Key points to consider are~\cite{Yan2020}:
+(i) get a clear picture of the solution architecture;
+(ii) functional decomposition patterns must be applied, this helps in defining services and splitting them;
+and (iii) separate reusable activities into reusable services.
+%
 To achieve the above, the key technologies used were service registration and discovery, remote service calling, circuit-breaker mechanism, service link tracking, and annotation interfaces.
-\end{itemize}
 
 
 \subsection{Integrating}%#10
-Integration of APIs, services, data, and systems has been a challenging yet essential requirement in the context of enterprise software application development. Before integrating all of these disparate applications in point-to-point style was done, which was later replaced by the enterprise service bus (ESB) style, alongside the service oriented architecture (SOA).
+Integration of APIs, services, data, and systems has been a challenging yet essential requirement in the context of enterprise software application development. %Before integrating all of these disparate applications in point-to-point style was done, which was later replaced by the enterprise service bus (ESB) style, alongside the service oriented architecture (SOA).
 Integration platform services (iPaaS) provides a platform in the cloud to support the application, data, and system-to-system integrations, using a mix of cloud services, mobile apps, on-premises systems, and internet of things integrations. 
+%
+%A message-Oriented middleware services (momPaaS) was proposed to support the communication and integration between the different microservices implemented in the respective system, thus supporting the message exchange with different protocols.
+%Enterprise horizontal portal services (Portal PaaS) can be used to provide a B2B portal that is integrated with the microservices layer.
+Integration platform services (iPaaS) was recommended for situations when the integration and exchange of information between cloud applications and on-premise and legacy applications are required\cite{rosa2018}.
 
-\par A message-Oriented middleware services (momPaaS) was proposed to support the communication and integration between the different microservices implemented in the respective system, thus supporting the message exchange with different protocols.
-Enterprise horizontal portal services (Portal PaaS) can be used to provide a B2B portal that is integrated with the microservices layer.
-Integration platform services (iPaaS) was recommended for situations when the integration and exchange of information between cloud applications and on-premise and legacy applications are required ~\cite{rosa2018}.
-
-\par Architecture style makes it possible to achieve fine-grained incremental migration. The integration of this architecture style manifests itself in two ways. First of all, the runtime environment should be able to host distributed microservices. The benefits of this are an improved upgradability, scalability, resilience, and resource sharing.
+Architecture style makes it possible to achieve fine-grained incremental migration. The integration of this architecture style manifests itself in two ways. First of all, the runtime environment should be able to host distributed microservices. The benefits of this are an improved upgradability, scalability, resilience, and resource sharing.
 Second, the transformation environment should consist of independent microservices. This enables the incremental transformation of the model through the pattern incrementality by traceability~\cite{liu2018, overeem2018}.
 
-\par Continuous integration and continuous delivery both go hand in hand with microservices. Without these two practices, it becomes very hard to handle multiple services, their deployments, and validating the actions of the service~\cite{Zhang2019, Kalske2017paper}. 
+Continuous integration and continuous delivery both go hand in hand with microservices. Without these two practices, it becomes very hard to handle multiple services, their deployments, and validating the actions of the service~\cite{Zhang2019, Kalske2017paper}. 
 
 
 
