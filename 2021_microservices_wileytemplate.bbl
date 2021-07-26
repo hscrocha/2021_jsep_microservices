@@ -37,29 +37,6 @@ Dragoni N, Giallorenzo S, Lafuente AL, et al. {\it Microservices: Yesterday,
 Zimmermann O. Microservices tenets. {\it Computer Science-Research and
   Development} 2017\string; 32(3-4)\string: 301--310.
 
-\bibitem{Osses2019}
-M{\'{a}}rquez G, Osses F, Astudillo H. An Exploratory Study of Academic
-  Architectural Tactics and Patterns in Microservices: {A} systematic
-  literature review. In:  Genero M, Kalinowski M, Molina JG, et al. \kern-2pt,
-  eds. {\it Proceedings of the {XXI} Iberoamerican Conference on Software
-  Engineering, Bogota, Colombia, April 23-27, 2018}Curran Associates;
-  2018\string: 71--84.
-
-\bibitem{Uber}
-blog UO. Service-Oriented Architecture: Scaling the Uber Engineering Codebase
-  As We Grow. 2015.
-\newblock \url{https://eng.uber.com/service-oriented-architecture/}.
-
-\bibitem{Amazon}
-Dhanasekaran K. Migrating Applications from Monolithic to Microservice on AWS.
-  2017.
-\newblock
-  \url{https://aws.amazon.com/blogs/apn/migrating-applications-from-monolithic-to-microservice-on-aws}.
-
-\bibitem{Kitchenham2007}
-Kitchenham B, Charters S. Guidelines for performing systematic literature
-  reviews in software engineering.  2007.
-
 \bibitem{Ghani2019}
 Ghani I, Wan-Kadir WM, Mustafa A, Babir M. Microservice Testing Approaches: A
   Systematic Literature Review. {\it International Journal of Integrated
@@ -78,6 +55,10 @@ Pahl. C, Jamshidi. P. Microservices: A Systematic Mapping Study. In: INSTICC.
 Ghofrani J, L{\"u}bke D. Challenges of Microservices Architecture: A Survey on
   the State of the Practice.. In: ; 2018\string: 1--8.
 
+\bibitem{Kitchenham2007}
+Kitchenham B, Charters S. Guidelines for performing systematic literature
+  reviews in software engineering.  2007.
+
 \bibitem{Sebastian2018}
 G\"{o}tz S. Supporting Systematic Literature Reviews in Computer Science: The
   Systematic Literature Review Toolkit. In: MODELS '18. Association for
@@ -88,6 +69,14 @@ Garousi V, Felderer M, M\"{a}ntyl\"{a} MV. The Need for Multivocal Literature
   Reviews in Software Engineering: Complementing Systematic Literature Reviews
   with Grey Literature. In: EASE '16. Association for Computing Machinery;
   2016; New York, NY, USA
+
+\bibitem{Osses2019}
+M{\'{a}}rquez G, Osses F, Astudillo H. An Exploratory Study of Academic
+  Architectural Tactics and Patterns in Microservices: {A} systematic
+  literature review. In:  Genero M, Kalinowski M, Molina JG, et al. \kern-2pt,
+  eds. {\it Proceedings of the {XXI} Iberoamerican Conference on Software
+  Engineering, Bogota, Colombia, April 23-27, 2018}Curran Associates;
+  2018\string: 71--84.
 
 \bibitem{Shady2020}
 Attia S. Systematic Literature Review. 2020.
@@ -142,23 +131,12 @@ Leo Z. Achieving a Reusable Reference Architecture for Microservices in Cloud
 \newblock Malardalen University, School of Innovation, Design and Engineering,
   Vasteras, Sweden.
 
-\bibitem{ghayyur2018}
-Ghayyur SAK, Razzaq A, Ullah S, Ahmed S. Matrix Clustering based Migration of
-  System Application to Microservices Architecture. {\it INTERNATIONAL JOURNAL
-  OF ADVANCED COMPUTER SCIENCE AND APPLICATIONS} 2018\string; 9(1)\string:
-  284--296.
-
 \bibitem{overeem2018}
 Overeem M, Jansen S. Continuous Migration of Mass Customized Applications.. In:
   ; 2018\string: 61--65.
 
 \bibitem{Difrancesco2017}
 Di~Francesco P. Architecting microservices. In: IEEE. ; 2017\string: 224--229.
-
-\bibitem{Lenga2019}
-Lenga S. {\it Modernization of Monolithic Legacy Applications towards a
-  Microservice Architecture with ExplorViz}. PhD thesis. Kiel University,
-  2019.
 
 \bibitem{Kamimura2018}
 Kamimura M, Yano K, Hatano T, Matsuo A. Extracting Candidates of Microservices
@@ -201,31 +179,27 @@ Venugopal M. Containerized Microservices architecture. {\it International
   Journal of Engineering and Computer Science} 2017\string; 6(11)\string:
   23199–23208.
 
-\bibitem{Hou2019}
-Hou X, Liu J, Li C, Guo M. Unleashing the Scalability Potential of
-  Power-Constrained Data Center in the Microservice Era. In: ; 2019\string:
-  1--10.
+\bibitem{coulson2020}
+Coulson NC, Sotiriadis S, Bessis N. Adaptive microservice scaling for elastic
+  applications. {\it IEEE Internet of Things Journal} 2020\string; 7(5)\string:
+  4195--4202.
 
 \bibitem{Soundcloud}
 Stuart T. Inside a SoundCloud Microservice. 2016.
 \newblock
   \url{https://developers.soundcloud.com/blog/microservices-and-the-monolith}.
 
-\bibitem{McElhiney2018}
-McElhiney PR. Scalable Web Service Development with Amazon Web Services.
-  Master's thesis. Univeristy of New Hampshire, Durham.  2018.
-
 \bibitem{khan2020}
 Khan M, others . Scalable invoice-based B2B payments with microservices.
   Master's thesis. Aalto University, School of Science.  2020.
 
-\bibitem{coulson2020}
-Coulson NC, Sotiriadis S, Bessis N. Adaptive microservice scaling for elastic
-  applications. {\it IEEE Internet of Things Journal} 2020\string; 7(5)\string:
-  4195--4202.
-
 \bibitem{Dmitrii2019}
 Savchenko D. Testing microservice applications.  2019.
+
+\bibitem{Karma}
+blog oK. How we build microservices at Karma. 2016.
+\newblock
+  \url{https://blog.karmawifi.com/how-we-build-microservices-at-karma-71497a89bfb4}.
 
 \bibitem{Russo2020}
 Pietrantuono R, Russo S, Guerriero A. Testing microservice architectures for
@@ -244,20 +218,15 @@ Huttunen J, others . Micro service Testing Practices in Public Sector Software
 Korbes E. Bringing Magic To Microservice Architecture Development. 2018.
 \newblock \url{youtu.be/accEvqeUJWs}.
 
-\bibitem{Karma}
-blog oK. How we build microservices at Karma. 2016.
-\newblock
-  \url{https://blog.karmawifi.com/how-we-build-microservices-at-karma-71497a89bfb4}.
+\bibitem{Kalske2017paper}
+Kalske M, M{\"a}kitalo N, Mikkonen T. Challenges when moving from monolith to
+  microservice architecture. In: Springer. ; 2017\string: 32--47.
 
 \bibitem{Kristiani2020}
 Kristiani E, Yang CT, Huang CY, Wang YT, Ko PC. The implementation of a
   cloud-edge computing architecture using OpenStack and Kubernetes for air
   quality monitoring application. {\it Mobile Networks and Applications}
   2020\string: 1--23.
-
-\bibitem{Kalske2017paper}
-Kalske M, M{\"a}kitalo N, Mikkonen T. Challenges when moving from monolith to
-  microservice architecture. In: Springer. ; 2017\string: 32--47.
 
 \bibitem{Zhang2019}
 Zhang H, Li S, Jia Z, Zhong C, Zhang C. Microservice architecture in reality:
@@ -269,14 +238,15 @@ Aguiar~Monteiro dL, Almeida WHC, Hazin RR, Lima dAC, Silva eSKG, Ferraz FS. A
   Standardization on Cloud Computing Environments. {\it International Journal
   on Advances in Security Volume 11, Number 3 and 4, 2018} 2018.
 
-\bibitem{Utomo2020}
-Utomo P, Falahah F. Conceptual Model of a Dashboard for Monitoring
-  Microservices. {\it EAI Endorsed Transactions on Cloud Systems} 2020\string;
-  6(18).
-
 \bibitem{Aaron2018}
 Bedra A. Security and Trust in a Microservices World. 2018.
 \newblock \url{youtu.be/ZKswxdPcdsE}.
+
+\bibitem{Amazon}
+Dhanasekaran K. Migrating Applications from Monolithic to Microservice on AWS.
+  2017.
+\newblock
+  \url{https://aws.amazon.com/blogs/apn/migrating-applications-from-monolithic-to-microservice-on-aws}.
 
 \bibitem{Gonchar2017}
 Gonchar G. Secure Microservices Adoption. {MicroXchg conference.}. 2017.
@@ -290,6 +260,10 @@ Tenev T. SECURITY PATTERNS FOR MICROSERVICE DATA MANAGEMENT. In: ; 2019\string:
 Koschel A, Astrova I, D{\"o}tterl J. Making the move to microservice
   architecture. In: IEEE. ; 2017\string: 74--79.
 
+\bibitem{McElhiney2018}
+McElhiney PR. Scalable Web Service Development with Amazon Web Services.
+  Master's thesis. Univeristy of New Hampshire, Durham.  2018.
+
 \bibitem{Ndungu2019}
 Ndungu M. ADOPTION OF THE MICROSERVICE ARCHITECTURE.  2019.
 
@@ -301,12 +275,6 @@ G{\"o}zneli B. {\it Identification and Evaluation of a Process for
 \bibitem{Premchand2018}
 {Premchand} A, {Choudhry} A. Architecture Simplification at Large Institutions
   using Micro Services. In: ; 2018\string: 30-35
-
-\bibitem{Branko2018}
-Terzi{\'c} B, Dimitrieski V, Kordi{\'c} S, Milosavljevi{\'c} G, Lukovi{\'c} I.
-  Development and evaluation of MicroBuilder: a Model-Driven tool for the
-  specification of REST Microservice Software Architectures. {\it Enterprise
-  Information Systems} 2018\string; 12(8-9)\string: 1034--1057.
 
 \bibitem{Fred2015}
 George F. Challenges in Implementing Microservices. 2015.
@@ -326,11 +294,6 @@ Carvalho L, Garcia A, Assun\c{c}\~{a}o WKG, Mello dR, Lima dMJ. Analysis of the
 \bibitem{Merson2020}
 Merson P, Yoder J. Modeling Microservices with DDD. In: IEEE. ; 2020\string:
   7--8.
-
-\bibitem{Yan2020}
-Li Y, Wang CZ, Li Yc, Su J. Granularity Decision of Microservice Splitting in
-  View of Maintainability and Its Innovation Effect in Government Data Sharing.
-  {\it Discrete Dynamics in Nature and Society} 2020\string; 2020.
 
 \bibitem{liu2018}
 Liu Q. {\it Integrating Game Engines into the Mobile Cloud as Micro-services}.
@@ -371,6 +334,12 @@ Neves JCRD. {\it Technical Challenges of Microservices Migration}. PhD thesis.
 Kalske M, M{\"a}kitalo N, Mikkonen T. Challenges When Moving from Monolith to
   Microservice Architecture. In: ; 2017.
 
+\bibitem{Branko2018}
+Terzi{\'c} B, Dimitrieski V, Kordi{\'c} S, Milosavljevi{\'c} G, Lukovi{\'c} I.
+  Development and evaluation of MicroBuilder: a Model-Driven tool for the
+  specification of REST Microservice Software Architectures. {\it Enterprise
+  Information Systems} 2018\string; 12(8-9)\string: 1034--1057.
+
 \bibitem{khan2017}
 Khan A. Microservices in context: Internet of Things - Infrastructure and
   Architecture. Master's thesis. Linnaeus University, Faculty of Technology,
@@ -384,6 +353,11 @@ Gonchar G. Microservices and Kafka. 2019.
 \bibitem{Santos2020}
 Santos N, Silva AR. A Complexity Metric for Microservices Architecture
   Migration. In: IEEE. ; 2020\string: 169--178.
+
+\bibitem{Lenga2019}
+Lenga S. {\it Modernization of Monolithic Legacy Applications towards a
+  Microservice Architecture with ExplorViz}. PhD thesis. Kiel University,
+  2019.
 
 \bibitem{Mikail2020}
 Boronin M. Hybrid Cloud Migration Challenges. A case study at King. Master's
@@ -399,14 +373,29 @@ Villamizar M, Garc{\'e}s O, Ochoa L, et al. Cost comparison of running web
 Schaefer R. From Monolith to Microservices at Zalando. 2016.
 \newblock \url{youtu.be/gEeHZwjwehs}.
 
+\bibitem{Uber}
+blog UO. Service-Oriented Architecture: Scaling the Uber Engineering Codebase
+  As We Grow. 2015.
+\newblock \url{https://eng.uber.com/service-oriented-architecture/}.
+
 \bibitem{Monteiro2020}
 Monteiro D, Maia PHM, Rocha LS, Mendon{\c{c}}a NC. Building orchestrated
   microservice systems using declarative business processes. {\it Service
   Oriented Computing and Applications} 2020\string; 14(4)\string: 243--268.
 
+\bibitem{Hou2019}
+Hou X, Liu J, Li C, Guo M. Unleashing the Scalability Potential of
+  Power-Constrained Data Center in the Microservice Era. In: ; 2019\string:
+  1--10.
+
 \bibitem{Vanska2019}
 V{\"a}nsk{\"a} MA. Automated testing for microservices. Master's thesis.
   Tampere University.  2019.
+
+\bibitem{Utomo2020}
+Utomo P, Falahah F. Conceptual Model of a Dashboard for Monitoring
+  Microservices. {\it EAI Endorsed Transactions on Cloud Systems} 2020\string;
+  6(18).
 
 \bibitem{Otharson2019}
 Otharson H. Reality Check: 6 Cost-Benefit Considerations When Adopting
@@ -417,6 +406,11 @@ Otharson H. Reality Check: 6 Cost-Benefit Considerations When Adopting
 \bibitem{Zrzavy2020}
 Zrzavy W. {\it Strategies for IT Product Managers to Manage Microservice
   Systems in Enterprises}. PhD thesis. Walden University,  2020.
+
+\bibitem{Yan2020}
+Li Y, Wang CZ, Li Yc, Su J. Granularity Decision of Microservice Splitting in
+  View of Maintainability and Its Innovation Effect in Government Data Sharing.
+  {\it Discrete Dynamics in Nature and Society} 2020\string; 2020.
 
 \bibitem{kitchenham2015}
 Kitchenham BA, Budgen D, Brereton P. {\it Evidence-based software engineering
