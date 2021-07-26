@@ -190,7 +190,7 @@ There are also multiple additional challenges when thinking about the integratio
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.5\linewidth]{images/commtechother.png}
+	\includegraphics[width=0.65\linewidth]{images/commtechother.png}
 	\caption{Technologies per group used for Implementing Microservices}
 	\label{fig:tech-group}
 \end{figure}	
@@ -208,113 +208,120 @@ The number of references of the groups showed in Figure~\ref{fig:tech-group} is 
 
 
 \subsubsection{Containers}
-Containers encapsulate discrete components of application logic provisioned only with the minimal resources needed to do their job. Containers and microservices enable developers to build and manage self-healing microservice-based applications more easily.
- 
-\par Docker: Docker is a platform for developing, shipping, and running applications. Developers can implement applications very fast by using docker~\cite{Sharaf2019, Kristiani2020, khan2020}. Moreover, it is simpler to create required services separately and manage them as microservices without affecting other services~\cite{Leo2019, Hou2020, Kalske2017paper, Bahadori2018}. We can create a docker image for service and by running some docker commands, we can view our microservice application inside a docker container. Docker swarm applications can be deployed as services in a swarm cluster~\cite{Falatiuk2019, Venugopal2017, coulson2020}.
-	
-\par Kubernetes: Kubernetes is a container orchestration system that is well-suited to automate the management, scaling, and deploying of microservice applications~\cite{Zaytev2018, Kristiani2020, khan2020}. 
-It is also possible to run kubernetes locally using MiniKube~\cite{Leo2019, Kalske2017paper}.
-Kubernetes ensures that the desired state (i.e., the state that we want the system to be in) and the actual state (i.e., the state that the system is actually in) are always in sync. Kubernetes continuously monitors the health of the cluster and ensures that the system is self-healing~\cite{Bahadori2018, Falatiuk2019, Venugopal2017}.
+Containers encapsulate discrete components of applications provisioned only with the minimal resources needed to do their job. Containers and microservices enable developers to build and manage self-healing service-based applications more easily.
 
-\par OpenShift: Red hat openshift is an open-source container application platform based on the kubernetes container orchestrator for enterprise application development and deployment~\cite{Johansson2019, Bahadori2018}.
+Docker is a platform for implementing and deploying applications. Developers can implement applications very fast by using docker.\cite{khan2020, Kristiani2020, Sharaf2019} Moreover, it is simpler to create required services separately and manage them as microservices without affecting other services.\cite{Leo2019, Kalske2017paper, Hou2020, Bahadori2018} We can create a docker image for service and view our microservice application inside a docker container. Docker swarm applications can be deployed as services in a swarm cluster.\cite{Venugopal2017, coulson2020, Falatiuk2019}
+	
+Kubernetes is a container orchestration system that is well-suited to automate the management, scaling, and deploying of microservice applications.\cite{khan2020, Zaytev2018, Kristiani2020}
+%It is also possible to run kubernetes locally using MiniKube.\cite{Leo2019, Kalske2017paper}
+Kubernetes ensures that the desired state (i.e., the state that we want the system to be in) and the actual state (i.e., the state that the system is actually in) are always in sync. Kubernetes continuously monitors the health of the cluster and ensures that the system is self-healing.\cite{Venugopal2017, Bahadori2018, Falatiuk2019}
+
+Red hat openshift is an open-source container application platform based on the kubernetes container orchestrator for enterprise application development and deployment.\cite{Johansson2019, Bahadori2018}
 
 
 \subsubsection{Programming Language}
-When it comes to microservices development, a natural question is what language to choose. Developers have many options regarding programming languages to develop microservices. The programming languages mentioned in the citations are shown below.
+When it comes to microservices development, a natural question is what language to choose. Developers have many options regarding programming languages to develop microservices. Microsoft's Xamarin (C\#, .Net) with Asp.net offers built-in support for deploying microservices using Docker containers.\cite{Johansson2019, liu2018, Falatiuk2019, chauvel2018, haugeland2020, neves2019} Other languages solutions for implementing microservices includes Java WSO2MicroservicesFramework,\cite{Venugopal2017, khan2020, Sharaf2019, KalskeM2017} and Python's flask application.\cite{Ghebremicael2017, khan2020, Hou2020}
 
-\par Xamarin (C\#, .net, .netcore): asp.net, the web framework for .net, makes it easy to create the application programming interface to become microservices. Asp.net comes with built-in support for developing and deploying your microservices using docker containers~\cite{liu2018, chauvel2018, haugeland2020, Johansson2019, neves2019, Falatiuk2019}.
+%Xamarin (C\#, .net, .netcore) makes it easy to create the application programming interface to become microservices. Asp.net comes with built-in support for developing and deploying your microservices using docker containers.\cite{Johansson2019, liu2018, Falatiuk2019, chauvel2018, haugeland2020, neves2019}
 
-\par JAVA (Java, jsp): WSO2MicroservicesFramework for java has been used in implementing microservices~\cite{Sharaf2019, khan2020, KalskeM2017, Venugopal2017}.
+%For Java, WSO2MicroservicesFramework is a solution for implementing microservices.\cite{Venugopal2017, khan2020, Sharaf2019, KalskeM2017}
 
-\par Python: Python programming language uses flask application for building microservices~\cite{Ghebremicael2017, khan2020, Hou2020}.
+%Python programming language uses flask application for building microservices.\cite{Ghebremicael2017, khan2020, Hou2020}
 
-\par PHP: PHP is also another programming language that can be used for implementing microservices~\cite{McElhiney2018}.
+%PHP is also another programming language that can be used for implementing microservices.\cite{McElhiney2018}
 
-\par Go: Golang, also known as 'go' is popular for its concurrency and application programming interface support in terms of microservices architecture. It can be a good choice for microservices development. ~\cite{liu2018}.
+Golang, also known as 'go' is popular for its concurrency and application programming interface support in terms of microservices architecture. It can be a good choice for microservices development.\cite{liu2018}
 
-\par C/C++: C++ is a programming language with imperative and object-oriented features that help developers write fast, portable programs. C++ is especially popular in areas where performance is crucial. Also, the compilation time and execution time of c++ is much faster than most other programming languages~\cite{Ghebremicael2017}. 
+PHP\cite{McElhiney2018} and C/C++\cite{Ghebremicael2017} can also be used for microservices development.
+
+%C++ is a programming language with imperative and object-oriented features that help developers write fast, portable programs. C++ is especially popular in areas where performance is crucial. Also, the compilation time and execution time of C++ is much faster than most other programming languages.\cite{Ghebremicael2017} 
 
 
 \subsubsection{Communication}
 
-The goal of the microservice architecture is to create loosely coupled services, and communication plays a key role in achieving that. Therefore, services must interact using interprocess communication protocols such as http, amqp, or a binary protocol like transmission control protocol (TCP), depending on the nature of each service. Below we present the communication protocols used in the studied publications and grey literature.
+The goal of the microservice architecture is to create loosely coupled services, and communication plays a key role in achieving that. Therefore, services must interact using interprocess communication protocols such as http, amqp, or a binary protocol like transmission control protocol (TCP), depending on the nature of each service. %Below we present the communication protocols used in the studied publications and grey literature.
 
-\par REST API: REST API stands for 'representational state transfer' and It is a set of rules that developers follow when they create their application programming interface~\cite{Ndungu2019, Zhang2019}. One of the rules states that a user should be able to get a piece of data by using a specific URL~\cite{Koschel2017, Branko2018}. Microservices function as the building blocks of the application by performing various services, while restful application programming interface function as the communication that integrates the microservices into an application.\cite{liu2018, Zaytev2018, chauvel2018, Johansson2019}.
+REST stands for 'representational state transfer' and It is a set of rules that developers follow when they create their application programming interface.\cite{Zhang2019, Ndungu2019} One of the rules states that a user should be able to get a piece of data by using a specific URL.\cite{Koschel2017, Branko2018} Microservices function as the building blocks of the application by performing various services, while restful application programming interface function as the communication that integrates the microservices into an application.\cite{Johansson2019, Zaytev2018, liu2018,  chauvel2018}
 
-\par CoAP: CoAP and http are both based on the rest model and can be used as communication protocols to expose restful Web Services in a mobile device cloud. We will compare coap with http to better explain it. coap is a restful web transfer protocol optimized for communication between resource-constrained networks and nodes. CoAP uses the User datagram protocol (UDP) as its transport protocol, unlike http which operates on top of the reliable transmission control protocol and can be too complex for constrained environments. CoAP is not a blind compressed version of http, but a subset of rest common, with support of uniform resource identifier (URI) and http verbs, that gear towards machine-to-machine applications, hence it is an effective protocol for micro-services hosted on mobile devices~\cite{liu2018, khan2017}.
+CoAP and http are both based on the rest model and can be used as communication protocols to expose restful Web Services in a mobile device cloud. %We will compare coap with http to better explain it. Coap is a restful web transfer protocol optimized for communication between resource-constrained networks and nodes. CoAP uses the User datagram protocol (UDP) as its transport protocol, unlike http which operates on top of the reliable transmission control protocol and can be too complex for constrained environments. 
+CoAP is not a blind compressed version of http, but a subset of rest common, with support of uniform resource identifier (URI) and http verbs, that gear towards machine-to-machine applications, hence it is an effective protocol for micro-services hosted on mobile devices.\cite{liu2018, khan2017}
 
-\par Apache Kafka: Apache kafka is an open-source distributed event streaming platform. Apache kafka is a powerful instrument for microservice architectures, which solves a variety of problems such as low-latency ingestion of large amounts of event data~\cite{wang2020, ebay}.
+Apache kafka is an open-source distributed event streaming platform. Apache kafka is a powerful instrument for microservice architectures, which solves a variety of problems such as low-latency ingestion of large amounts of event data.\cite{wang2020, ebay}
 
-\par Apache Dubbo: Apache dubbo is a remote procedure call or remote procedure control-based service framework for programming. Dubbo is also a service governance framework, which provides service governance solutions such as service discovery and traffic scheduling for distributed microservices~\cite{Zhang2019}
+Apache dubbo is a remote procedure call or remote procedure control-based service framework for programming. Dubbo is also a service governance framework, which provides service governance solutions such as service discovery and traffic scheduling for distributed microservices.\cite{Zhang2019}
 
 
 \subsubsection{Framework}
 
-Microservices can be implemented with a plethora of frameworks and using frameworks can help speed up the development of microservices. Below we present the frameworks used in implementing microservices in the analyzed references.
+Microservices can be implemented with a plethora of frameworks and using them can help speed up the development of microservices. %Below we present the frameworks used in implementing microservices in the analyzed references.
+%
+Spring is an open-source framework based on the java platform. %Spring boot is part of the spring framework family to fastly create stand-alone applications. 
+The distributed nature of microservices brings challenges. Spring helps us mitigate these. With several ready-to-run cloud patterns, spring cloud can help with service discovery, load-balancing, circuit-breaking, distributed tracing, and monitoring. It can even act as an application programming interface gateway.\cite{selmadji2020, KalskeM2017,  Santos2020}
 
-\par Spring framework: Spring is an open-source framework based on the java platform. Spring boot is part of the spring framework family to fastly create stand-alone applications. The distributed nature of microservices brings challenges. Spring helps us mitigate these. With several ready-to-run cloud patterns, spring cloud can help with service discovery, load-balancing, circuit-breaking, distributed tracing, and monitoring. It can even act as an application programming interface gateway ~\cite{KalskeM2017, selmadji2020, Santos2020}.
+Meteor is a framework meant to facilitate the whole web application development, encompassing the front end, back end, and database. As such, it can be considered a full-stack web application framework. Meteor is written in javascript and based on Node.js. Having a proper microservices architecture by using multiple meteor applications can be achieved reliably.\cite{Tuuli2020}
 
-\par Meteor framework: Meteor is a framework meant to facilitate the whole web application development, encompassing the frontend, backend, as well as database. As such, it can be considered a full-stack web application framework. Meteor is written in javascript and is based on Node.js. The concept of having a proper microservices architecture using multiple meteor applications should be achieved reliably ~\cite{Tuuli2020}.
+Apollo is a great fit with microservice architectures and modern user interface frameworks like React. It serves as an abstraction layer that decouples services and applications so that each can be developed independently of the other, in any language and on any platform.\cite{Kevin2015}
 
+Garden framework works like a spinnaker for implementing microservices.\cite{Ellen2018}
 
-\par Apollo framework: Apollo is a great fit with microservice architectures and modern user interface frameworks like React. It serves as an abstraction layer that decouples services and applications so that each can be developed independently of the other, in any language and on any platform ~\cite{Kevin2015}.
-
-\par Garden framework: Garden framework works like a spinnaker for implementing microservices~\cite{Ellen2018}.
-
-\par ANT-man framework: an auto, native and transparent power management framework that can exploit fine-grained microservice variability for system efficiency\cite{Hou2020}.
+ANT-man framework is an auto, native and transparent power management framework that can exploit fine-grained microservice variability for system efficiency.\cite{Hou2020}
 
 
 \subsubsection{Monitoring}
 Monitoring is a process of reporting, gathering and storing data. Some of the technologies/tools which are discussed before for monitoring microservices. 
-\par Ganglia: Ganglia is one of the distributed monitoring tools for high-performance computing systems~\cite{Kristiani2020}.
 
-\par Atlas: Atlas is a cloud monitoring tool which is newly introduced by netflix~\cite{Netflix}.
+Ganglia is one of the distributed monitoring tools for high-performance computing systems.\cite{Kristiani2020}
 
-\par Explorviz: Explorviz is a monitoring and visualization approach, which uses dynamic analysis techniques to provide a live trace visualization of large software landscapes\cite{Lenga2019}.
+Atlas is a cloud monitoring tool which is newly introduced by netflix.\cite{Netflix}
 
-\par Play AND Akka: The play framework is a web framework for the java virtual machine (JVM) that breaks away from the servlet specification. Play embraces a fully reactive programming model through the use of futures for asynchronous programming, work stealing for maximizing available threads, and akka for distribution of work. They are useful in building individual services, and leveraging both http and kafka for inter-service communication~\cite{khan2017}.
+Explorviz is a monitoring and visualization approach, which uses dynamic analysis techniques to provide a live trace visualization of large software landscapes.\cite{Lenga2019}
 
-\par Grafana: Grafana is an open-source platform for data visualization, monitoring and analysis~\cite{KalskeM2017,Kalske2017paper}. 
+The play framework is a web framework for the JVM that breaks away from the servlet specification. Play embraces a fully reactive programming model through the use of futures for asynchronous programming, work stealing for maximizing available threads, and akka for distribution of work. They are useful in building individual services, and leveraging both http and kafka for inter-service communication.\cite{khan2017}
 
-\par Prometheus: Prometheus is an open-source monitoring system with a dimensional data model, flexible query language, efficient time series database and modern alerting approach~\cite{KalskeM2017, Kalske2017paper} 
+Grafana is an open-source platform for data visualization, monitoring and analysis.\cite{Kalske2017paper,KalskeM2017} 
 
-\par Kibana: Kibana is a free and open user interface that lets us visualize your elasticsearch data and navigate the Elastic Stack~\cite{KalskeM2017, Kalske2017paper} 
+Prometheus is an open-source monitoring system with a dimensional data model, flexible query language, efficient time series database and modern alerting approach.\cite{Kalske2017paper, KalskeM2017} 
+
+Kibana is a free and open user interface that lets us visualize your elasticsearch data and navigate the Elastic Stack.\cite{Kalske2017paper, KalskeM2017} 
 
 
 \subsubsection{Platform as a Service (PaaS)}
 
-Running microservices on a platform as a service fabric decreases solution fragility, reduces operational burden, and enhances developer productivity~\cite{rosa2018, Mikail2020}.
+Running microservices on a platform as a service fabric decreases solution fragility, reduces operational burden, and enhances developer productivity.\cite{rosa2018, Mikail2020}
 
-\par Amazon web services (AWS) cloud hosting platform: Among the primary benefits of a microservices architecture are the utilization and cost benefits associated with deploying and scaling components individually. While these benefits would still be present to some extent with on-premises infrastructure, the combination of small, independently scalable components coupled with on-demand, pay-per-use infrastructure is where real cost optimizations can be found~\cite{McElhiney2018}.
+Amazon web services (AWS) cloud hosting platform is a solution for scaling and deploying microservices individually.  
+While these benefits would still be present to some extent with on-premises infrastructure, the combination of small, independently scalable components coupled with on-demand, pay-per-use infrastructure is where cost optimizations can be found.%\cite{McElhiney2018}
+%
+AWS auto-scaling group (EC2) compute cloud is a part of amazon cloud-computing platform, amazon web services, that allows users to rent virtual computers on which to run their computer applications.%\cite{McElhiney2018}
+%
+Amazon AWS elastic load balancer automatically distributes incoming application traffic across multiple targets.\cite{McElhiney2018}
 
-\par AWS auto-scaling group (EC2): Amazon elastic compute cloud is a part of amazon cloud-computing platform, amazon web services, that allows users to rent virtual computers on which to run their computer applications~\cite{McElhiney2018}.
+Software as a service (SaaS) is a recent popular model of licensing software. Microservices are the resulting standalone services after breaking a software application down into separate components that perform their functions without being embedded in the application itself. Microservices are perfectly suited for SaaS, where each service is assumed to be part of a larger system.\cite{haugeland2020}
 
-\par Amazon AWS elastic load balancer: Elastic load balancing automatically distributes incoming application traffic across multiple targets~\cite{McElhiney2018}.
+Amazon virtual private cloud (Amazon VPC) is a service that lets us launch AWS resources in a logically isolated virtual network that we define. Amazon\cite{Amazon} uses this service to secure the traffic across cloud.
 
-\par Software as a service (SaaS): Microservices are the resulting standalone services after breaking a software application down into separate components that perform their functions without being embedded in the application itself. Microservices are perfectly suited for saas, where each service is assumed to be part of a larger system~\cite{haugeland2020}.
-
-\par Amazon VPC: Amazon virtual private cloud (Amazon VPC) is a service that lets us launch aws resources in a logically isolated virtual network that we define. Amazon~\cite{Amazon} uses amazon vpc to secure the traffic across cloud.
-
-\par AWS Lamdba: AWS lamdba is a compute service that lets us run code without provisioning or managing servers. Lambda runs the code only when needed and scales automatically. AWS lambda is used to reduce infrastructure costs~\cite{villamizar2017}.
+AWS Lamdba is a compute service that lets us run code without provisioning or managing servers. Lambda runs the code only when needed and scales automatically. AWS lambda is used to reduce infrastructure costs.\cite{villamizar2017}
 
 \subsubsection{Other Technologies}
 
-\par GraphQL: Graph query language (GraphQL) is considered as an alternative for Representational state transfer application programming interface. It is most useful when it is able to combine different data sources into one and serve that up as one unified application programming interface. GraphQL hides the fact that we have a microservice architecture from the clients. From a backend perspective, we want to split everything into microservices, but from a frontend perspective, we would like all our data to come from a single application programming interface. Using graphgl is the best way that lets us do both~\cite{Ghebremicael2017, wang2020, overeem2018, gozneli2020}.
+In this group, we placed technologies that did not fit into any other. Therefore, the technologies reported in this group are not related to each other. 
 
-\par Circuit breaker: Hystrix, circuit breaker pattern allows us to build a fault-tolerant and resilient system that can survive gracefully when key services are either unavailable or have high latency \cite{Kalske2017paper}, \cite{Rodrigue2016}, \cite{Uber}. 
+Graph query language (GraphQL) is considered as an alternative for Representational state transfer application programming interface. It is most useful when it is able to combine different data sources into one and serve that up as one unified application programming interface. GraphQL hides the fact that we have a microservice architecture from the clients. From a backend perspective, we want to split everything into microservices, but from a frontend perspective, we would like all our data to come from a single application programming interface. Using graphgl is the best way that lets us do both.\cite{wang2020, overeem2018, Ghebremicael2017, gozneli2020}
 
-\par Beethoven: Beethoven is a platform composed of a reference architecture and a domain-specific language for expressing microservice communication flows~\cite{Monteiro2020}.
+Hystrix Circuit Breaker pattern allows us to build a fault-tolerant and resilient system that can survive gracefully when key services are either unavailable or have high latency.\cite{Kalske2017paper, Rodrigue2016, Uber} 
 
-\par Apache JMeter: Apache jmeter is an apache project that can be used as a load testing tool for analyzing and measuring the performance of a variety of services. It is also used for performance-test in the microservice applications ~\cite{Hou2019}~\cite{Johansson2019}.
+Beethoven is a platform composed of a reference architecture and a domain-specific language for expressing microservice communication flows.\cite{Monteiro2020}
 
-\par SArF : SArF is an sofware clustering algorithm and it has two characteristics. First, sarf eliminates the need of the omnipresent-module-removing step which requires human interactions. Second, the objective of sarf is to gather relevant software features or functionalities into a cluster. Thus, it is used to find the candidates for microservice from the source code ~\cite{Kamimura2018}.
+Apache Jmeter is an apache project that can be used as a load testing tool for analyzing and measuring the performance of a variety of services. It is also used for performance-test in the microservice applications.\cite{Johansson2019, Hou2019}
 
-\par EMART: Enhanced microservice adaptive reliability testing (EMART) is a tool for testing the applications~\cite{Russo2020}
+SArF is an sofware clustering algorithm and it has two characteristics. First, SArF eliminates the need of the omnipresent-module-removing step which requires human interactions. Second, the objective of SArF is to gather relevant software features or functionalities into a cluster. Thus, it is used to find the candidates for microservice from the source code.\cite{Kamimura2018}
 
-\par Apache Zookeeper: Apache zookeeper is an open-source server for highly reliable distributed coordination of cloud applications. However, this architecture makes it hard to scale out to huge numbers of clients. ZooKeeper node called an 'observer' which helps address this problem and further improves zooKeeper's scalability~\cite{Kalske2017paper, KalskeM2017}.
+Enhanced Microservice Adaptive Reliability Testing (EMART) is a tool for testing microservices applications.\cite{Russo2020}
 
-\par Eureka Server: Eureka server is an application that holds the information about all client-service applications. Every micro service will register into the eureka server and Eureka server knows all the client applications running on each port and internet protocol address~\cite{Uber}.
+Apache Zookeeper is an open-source server for highly reliable distributed coordination of cloud applications. However, this architecture makes it hard to scale out to huge numbers of clients. ZooKeeper node called an 'observer' which helps address this problem and further improves Zookeeper's scalability.\cite{Kalske2017paper, KalskeM2017}
 
-\par MicroBuilder: MicroBuilder is the tool used for the specification of software architecture that follows representational state transfer microservice design principles~\cite{Branko2018} 
+Eureka Server is an application that holds the information about all client-service applications. Every micro service will register into the eureka server and Eureka server knows all the client applications running on each port and internet protocol address.\cite{Uber}
+
+MicroBuilder is the tool used for the specification of software architecture that follows representational state transfer microservice design principles.\cite{Branko2018} 
 
 
